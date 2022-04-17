@@ -123,7 +123,7 @@ const LoginScreen = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
+            <StatusBar backgroundColor="#009387" barStyle="light-content" />
             <View style={styles.header}>
                 <Text style={styles.text_header}>EasyBuy!</Text>
             </View>
@@ -177,18 +177,18 @@ const LoginScreen = ({ navigation }) => {
                         <Text style={styles.errorMsg}>invalid password</Text>
                     </Animatable.View>
                 )}
-                {/* <TouchableOpacity>
+                <TouchableOpacity>
                     <Text style={{ color: customColor.dark, marginTop: 15 }}>Forgot password?</Text>
-                </TouchableOpacity> */}
+                </TouchableOpacity>
                 <View style={styles.button}>
                     <TouchableOpacity onPress={handleSubmit} style={[styles.buttonContainer]}>
-                        <Text style={styles.text_footer}>Login</Text>
+                        <Text style={styles.buttonText}>Login</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         onPress={handleOnClickRegister}
                         style={[styles.buttonContainer, { backgroundColor: customColor.light }]}
                     >
-                        <Text style={styles.text_footer}>Register</Text>
+                        <Text style={styles.buttonText}>Register</Text>
                     </TouchableOpacity>
                 </View>
             </Animatable.View>
@@ -198,11 +198,10 @@ const LoginScreen = ({ navigation }) => {
 
 export default LoginScreen;
 
-// vendrz homescreen welcome page
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FF9292"
+        backgroundColor: "#000066"
     },
     buttonContainer: {
         width: "100%",
@@ -228,10 +227,9 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         paddingBottom: 50
     },
-    //home screen vendrz form
     footer: {
         flex: 3,
-        backgroundColor: "#FFDCDC",
+        backgroundColor: "#e6e6ff",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         paddingHorizontal: 20,
@@ -242,9 +240,8 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 30
     },
-    //form text
     text_footer: {
-        color: "#39311D",
+        color: "#05375a",
         fontSize: 18
     },
     action: {
@@ -265,7 +262,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: Platform.OS === "ios" ? 0 : -12,
         paddingLeft: 10,
-        color: "#39311D"
+        color: "#05375a"
     },
     errorMsg: {
         color: "#FF0000",

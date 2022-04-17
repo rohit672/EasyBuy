@@ -1,5 +1,5 @@
 module.exports = {
-    dark: "#39311D",
-    medium: "#9999ff",
+    dark: "#1F1D36",
+    medium: "#FF9292",
     light: "#FF9292"
 };

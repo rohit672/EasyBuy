@@ -36,7 +36,8 @@ export default function UserCard(props) {
                         }}
                     />
                     <ListItem.Content>
-                        <ListItem.Title>{u.name}</ListItem.Title>
+                        <ListItem.Title style = {{fontWeight : 'bold'}}>{u.name}</ListItem.Title>
+                        <ListItem.Title>{u.locality} , {u.city}</ListItem.Title>
                         <ListItem.Subtitle>{u.products.length} product(s)</ListItem.Subtitle>
                     </ListItem.Content>
                     <ListItem.Chevron

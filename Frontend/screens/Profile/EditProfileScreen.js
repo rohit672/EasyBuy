@@ -152,7 +152,7 @@ const EditProfileScreen = ({ navigation }) => {
             try {
                 let url = `${REST_API_URL}/api/vendor/vendor`;
                 if (!token.isVendor) {
-                    console.log("its a user") ; 
+
                     url = `${REST_API_URL}/api/user/user`;
                 }
                 let response = await axios.put(url, form, requestConfig);
@@ -271,23 +271,7 @@ const EditProfileScreen = ({ navigation }) => {
                     </View>
 
                     {/* modification  */}
-
-                    <View style={styles.action}>
-                        <FontAwesome name="envelope-o" size={20} />
-                        <TextInput
-                            placeholder="Email"
-                            placeholderTextColor="#666666"
-                            keyboardType="email-address"
-                            value={email}
-                            onChangeText={(val) => {
-                                setEmail(val);
-                            }}
-                            autoCorrect={false}
-                            style={styles.textInput}
-                        />
-                    </View>
-
-
+                    
                     <View style={styles.action}>
                         <FontAwesome name="phone" size={20} />
                         <TextInput

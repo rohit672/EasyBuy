@@ -13,12 +13,12 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    address: {
-        street: String,
-        city: String,
-        postal_code: String,
-        country: String
-    },
+    // address: {
+    //     street: String,
+    //     city: String,
+    //     postal_code: String,
+    //     country: String
+    // },
     imageUrl: {
         type : String
     },

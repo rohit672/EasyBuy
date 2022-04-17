@@ -2,16 +2,19 @@ const bcrypt = require("bcryptjs");
 const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
+const cloudinary = require("../utils/cloudinary");
 
 // PUT the updated user and return updated user
 exports.putUser = async (req, res, next) => {
+
     let { name, email, contact, city , locality } = req.body;
+
     const user = await User.findById(req.user.userId);
     
     if (!user) return res.json({ success: false, message: "Invalid user to update" });
 
     let updates = {};
-    updates.address = {};
+  //  updates.address = {};
     if (name) {
         updates.name = name;
     }
@@ -53,17 +56,20 @@ exports.putUser = async (req, res, next) => {
         updates.imageUrl = result.secure_url;
         updates.cloudinary_id = result.public_id;
     }
+
     let updatedUser = await User.findByIdAndUpdate(
         user._id,
         { $set: updates },
         { new: true }
     );
+
     if (updatedUser) {
         return res.json({
             success: true,
             message: "User Details Updated",
             user: updatedUser
         });
+
     } else {
         return res.json({ success: false, message: "Sorry, Details cannot be updated" });
     }

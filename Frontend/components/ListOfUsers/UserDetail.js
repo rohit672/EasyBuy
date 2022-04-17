@@ -35,12 +35,13 @@ export default function UserDetail(props) {
     const message = "Hi I want to buy a few products from you!";
 
     useEffect(() => {
+        
         const fetchAPI = async () => {
             setIsLoading(true);
             setProducts(user.products);
             setInitialState(user.products);
             setProductsCtg(user.products);
-            setProducts(user.products);
+          //  setProducts(user.products);
             let res = await axios.get(`${REST_API_URL}/api/index/category`);
             if (res.data.success === true) {
                 setCategories(res.data.categories);
@@ -72,7 +73,7 @@ export default function UserDetail(props) {
         {
             ctg === "all"
                 ? [setProductsCtg(initialState), setActive(true)]
-                : [
+                : [ 
                       setProductsCtg(
                           products.filter((i) => i.category === ctg),
                           setActive(true)
@@ -114,6 +115,14 @@ export default function UserDetail(props) {
                         >
                             <ListItem.Subtitle style={{ fontSize: 10 }}>Email :</ListItem.Subtitle>
                             <ListItem.Title>{user.email}</ListItem.Title>
+                        </ListItem>
+
+                        <ListItem
+                            style={styles.listItemStyle}
+                            containerStyle={{ borderRadius: 10 }}
+                        >
+                            <ListItem.Subtitle style={{ fontSize: 10 }}>Location :</ListItem.Subtitle>
+                            <ListItem.Title>{user.locality} , {user.city}</ListItem.Title>
                         </ListItem>
 
                         <ListItem

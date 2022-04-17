@@ -175,7 +175,7 @@ exports.putVendor = async (req, res, next) => {
     if (updatedVendor) {
         return res.json({
             success: true,
-            message: "Vendor details updated successfully",
+            message: "Vendor details updated",
             vendor: updatedVendor
         });
     } else {

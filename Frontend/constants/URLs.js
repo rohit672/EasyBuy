@@ -1,2 +1,2 @@
-export const REST_API_URL = `https://vhelp-backend.herokuapp.com`;
+export const REST_API_URL = `https://easybuyback.herokuapp.com`;
 

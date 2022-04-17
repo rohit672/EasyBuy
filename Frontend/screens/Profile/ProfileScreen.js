@@ -129,7 +129,7 @@ const ProfileScreen = ({ navigation }) => {
 
                         <View style={styles.row}>
                             <Icon name="map-marker-radius" color="#777777" size={20} />
-                            <Text style={{ color: "#777777", marginLeft: 20 }}> {city} , {locality} </Text>
+                            <Text style={{ color: "#777777", marginLeft: 20 }}> {locality} , {city} </Text>
                         </View>
                     
                     <View style={styles.row}>
