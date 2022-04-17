@@ -125,7 +125,7 @@ const LoginScreen = ({ navigation }) => {
         <View style={styles.container}>
             <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
             <View style={styles.header}>
-                <Text style={styles.text_header}>Vendrz!</Text>
+                <Text style={styles.text_header}>EasyBuy!</Text>
             </View>
             <Animatable.View animation="fadeInUpBig" style={[styles.footer]}>
                 <Text style={[styles.text_footer]}>Email</Text>
