@@ -1,0 +1,102 @@
+[
+    {
+        "_id": 1,
+        "name": "Clay Products",
+        "cost": 20,
+        "category": "Art",
+        "imageUrl": "https://image.shutterstock.com/z/stock-photo-pondicherry-puducherry-february-woman-street-vendor-selling-gift-items-handicrafts-1325897540.jpg",
+        "seller": "Shaanta Pots",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 2,
+        "name": "Bananas",
+        "cost": 12,
+        "category": "Fruits",
+        "imageUrl": "https://im.indiatimes.in/photogallery/2020/Apr/1afp_5ea00fcfb21b1.jpg?w=1200&h=900&cc=1",
+        "seller": "Rajesh Stall",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 3,
+        "name": "Leather Items",
+        "cost": 50,
+        "category": "General",
+        "imageUrl": "https://businessnes.com/wp-content/uploads/2018/04/236684D1-85CE-4D7F-8D8F-B5A3B1682474.jpeg",
+        "seller": "Riti Stall",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 4,
+        "name": "Puja Items",
+        "cost": 20,
+        "category": "General",
+        "imageUrl": "https://thumbs.dreamstime.com/z/street-vendor-series-religious-items-s-selling-to-buyers-lower-parel-mumbai-india-144121359.jpg",
+        "seller": "Radhe Store",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 5,
+        "name": "Chaat & GolGappe",
+        "cost": 30,
+        "category": "Street-Food",
+        "imageUrl": "https://i.pinimg.com/originals/28/31/75/28317570676a9be9c76f4eae1ea5a694.jpg",
+        "seller": "Shyaam Chaat",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 6,
+        "name": "Cups and Glasses",
+        "cost": 100,
+        "category": "Art",
+        "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2019%2F09%2FLe20Creuset20Mug.jpg&q=85",
+        "seller": "Jack Sparrow",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 7,
+        "name": "FoodieZone",
+        "cost": 23,
+        "category": "Street-Food",
+        "imageUrl": "https://static.toiimg.com/thumb/msid-66919188,width-748,height-499,resizemode=4,imgsize-168094/.jpg",
+        "seller": "Jack Sparrow",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 8,
+        "name": "Plastic Items",
+        "cost": 20,
+        "category": "General",
+        "imageUrl": "https://thumbs.dreamstime.com/z/street-vendor-selling-colorful-plastic-items-kolkata-india-april-roadside-69918902.jpg",
+        "seller": "Raajeev Generals",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 9,
+        "name": "Namkeen and Bhujiya",
+        "cost": 100,
+        "category": "Street-Food",
+        "imageUrl": "https://storage.googleapis.com/picxystatic/cache/2019/5/27/0a19750a4c1b4110357c65c07b72837c.jpg",
+        "seller": "Mirtya",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    },
+    {
+        "_id": 10,
+        "name": "Kabadi Vaala",
+        "cost": 20,
+        "category": "Services",
+        "imageUrl": "https://images.jdmagicbox.com/comp/delhi/m9/011pxx11.xx11.160120111153.p8m9/catalogue/paliwal-kabadi-shop-vikaspuri-delhi-scrap-dealers-dixykj.jpg?clr=",
+        "seller": "Ajamal",
+        "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "detaildesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut."
+    }
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "seller_id": 1,
+        "name": "Shaanta Pots",
+        "imageUrl": "https://i.pravatar.cc/200?img=10",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut.",
+        "products": [
+            {
+                "_id": 1,
+                "name": "Clay Products",
+                "cost": 20,
+                "category": "Art",
+                "imageUrl": "https://image.shutterstock.com/z/stock-photo-pondicherry-puducherry-february-woman-street-vendor-selling-gift-items-handicrafts-1325897540.jpg",
+                "seller": "Shaanta Pots"
+            },
+            {
+                "_id": 11,
+                "name": "Clay Jug & Glass Set",
+                "cost": 40,
+                "category": "Art",
+                "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61uSVGcYqbL._SX425_.jpg",
+                "seller": "Shaanta Pots"
+            },
+            {
+                "_id": 12,
+                "name": "Kadhaai",
+                "cost": 100,
+                "category": "Art",
+                "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61iLBAUEdoL._SY355_.jpg",
+                "seller": "Shaanta Pots"
+            }
+        ]
+    },
+    {
+        "seller_id": 2,
+        "name": "Rajesh Stall",
+        "imageUrl": "https://i.pravatar.cc/200?img=4",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut.",
+        "products": [
+            {
+                "_id": 2,
+                "name": "Bananas",
+                "cost": 12,
+                "category": "Fruits",
+                "imageUrl": "https://im.indiatimes.in/photogallery/2020/Apr/1afp_5ea00fcfb21b1.jpg?w=1200&h=900&cc=1",
+                "seller": "Rajesh Stall"
+            }
+        ]
+    },
+    {
+        "seller_id": 3,
+        "name": "Chanda Sweets",
+        "imageUrl": "https://i.pravatar.cc/200?img=5",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut.",
+        "products": [
+            {
+                "_id": 2,
+                "name": "Bengol Sweet",
+                "cost": 12,
+                "category": "Fruits",
+                "imageUrl": "https://im.indiatimes.in/photogallery/2020/Apr/1afp_5ea00fcfb21b1.jpg?w=1200&h=900&cc=1",
+                "seller": "Chanda Sweets"
+            }
+        ]
+    },
+    {
+        "seller_id": 4,
+        "name": "Khan Bhandaar",
+        "imageUrl": "https://i.pravatar.cc/200?img=6",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut.",
+        "products": [
+            {
+                "_id": 2,
+                "name": "Kabadi Vala",
+                "cost": 12,
+                "category": "Services",
+                "imageUrl": "https://im.indiatimes.in/photogallery/2020/Apr/1afp_5ea00fcfb21b1.jpg?w=1200&h=900&cc=1",
+                "seller": "Khan Bhandar"
+            }
+        ]
+    },
+    {
+        "seller_id": 5,
+        "name": "Aggrawal Tailor",
+        "imageUrl": "https://i.pravatar.cc/200?img=7",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut.",
+        "products": [
+            {
+                "_id": 2,
+                "name": "Stitiching",
+                "cost": 12,
+                "category": "Services",
+                "imageUrl": "https://im.indiatimes.in/photogallery/2020/Apr/1afp_5ea00fcfb21b1.jpg?w=1200&h=900&cc=1",
+                "seller": "Aggrawal Tailor"
+            }
+        ]
+    },
+    {
+        "seller_id": 6,
+        "name": "Prakriti Stall",
+        "imageUrl": "https://i.pravatar.cc/200?img=8",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut.",
+        "products": [
+            {
+                "_id": 2,
+                "name": "Tulsi Plants",
+                "cost": 12,
+                "category": "General",
+                "imageUrl": "https://im.indiatimes.in/photogallery/2020/Apr/1afp_5ea00fcfb21b1.jpg?w=1200&h=900&cc=1",
+                "seller": "Prakriti Stall"
+            }
+        ]
+    },
+    {
+        "seller_id": 7,
+        "name": "Radhe Shop",
+        "imageUrl": "https://i.pravatar.cc/200?img=9",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra vel turpis nunc. In aliquam sem fringilla ut.",
+        "products": [
+            {
+                "_id": 2,
+                "name": "House Products",
+                "cost": 12,
+                "category": "General",
+                "imageUrl": "https://im.indiatimes.in/photogallery/2020/Apr/1afp_5ea00fcfb21b1.jpg?w=1200&h=900&cc=1",
+                "seller": "Radhe Shop"
+            }
+        ]
+    }
+]
