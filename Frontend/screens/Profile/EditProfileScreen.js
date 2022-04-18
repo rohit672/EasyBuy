@@ -180,13 +180,13 @@ const EditProfileScreen = ({ navigation }) => {
                 <Text style={styles.panelTitle}>Upload Photo</Text>
                 <Text style={styles.panelSubtitle}>Choose Your Profile Picture</Text>
             </View>
-            <TouchableOpacity style={styles.panelButton} onPress={takePhotoFromCamera}>
+            <TouchableOpacity style={styles.panelButton1} onPress={takePhotoFromCamera}>
                 <Text style={styles.panelButtonTitle}>Take Photo</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.panelButton} onPress={choosePhotoFromLibrary}>
+            <TouchableOpacity style={styles.panelButton2} onPress={choosePhotoFromLibrary}>
                 <Text style={styles.panelButtonTitle}>Choose From Library</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.panelButton} onPress={() => bs.current.snapTo(1)}>
+            <TouchableOpacity style={styles.panelButton3} onPress={() => bs.current.snapTo(1)}>
                 <Text style={styles.panelButtonTitle}>Cancel</Text>
             </TouchableOpacity>
         </View>
@@ -434,7 +434,7 @@ const styles = StyleSheet.create({
     },
     panelTitle: {
         fontSize: 27,
-        height: 35
+        height: 40
     },
     panelSubtitle: {
         fontSize: 14,
@@ -442,10 +442,24 @@ const styles = StyleSheet.create({
         height: 30,
         marginBottom: 10
     },
-    panelButton: {
+    panelButton1: {
+        padding: 13,
+        borderRadius: 10,
+        backgroundColor: "#FF9292",
+        alignItems: "center",
+        marginVertical: 7
+    },
+    panelButton2: {
         padding: 13,
         borderRadius: 10,
         backgroundColor: "#FFB4B4",
+        alignItems: "center",
+        marginVertical: 7
+    },
+    panelButton3: {
+        padding: 13,
+        borderRadius: 10,
+        backgroundColor: "#FFCCCC",
         alignItems: "center",
         marginVertical: 7
     },
