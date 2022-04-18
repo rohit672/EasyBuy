@@ -179,6 +179,7 @@ const RegisterScreen = ({ navigation }) => {
     
     return (
         <View style={styles.container}>
+            {/* status bar is top notification area */}
             <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
             <View style={styles.header}>
                 <Text style={styles.text_header}>Register Now!</Text>
