@@ -23,6 +23,7 @@ const { height, width } = Dimensions.get("window");
 const colors = require("../../constants/Color");
 
 export default function UserDetail(props) {
+
     const [user, setUser] = useState(props.route.params.user);
     const [categories, setCategories] = useState([]);
     const [active, setActive] = useState();
@@ -37,11 +38,14 @@ export default function UserDetail(props) {
     useEffect(() => {
         
         const fetchAPI = async () => {
+
             setIsLoading(true);
+
             setProducts(user.products);
             setInitialState(user.products);
             setProductsCtg(user.products);
-          //  setProducts(user.products);
+            setProducts(user.products);
+
             let res = await axios.get(`${REST_API_URL}/api/index/category`);
             if (res.data.success === true) {
                 setCategories(res.data.categories);
@@ -53,13 +57,16 @@ export default function UserDetail(props) {
 
         fetchAPI();
 
-        console.log(
-            productsCtg.map((item, i) => {
-                return item.name;
-            })
-        );
+        // console.log(
+        //     productsCtg.map((item, i) => {
+        //         return item.name;
+        //     })
+        // );
+
         setActive(-1);
+
     }, []);
+
 
     const openCallDialer = (phone) => {
         Linking.openURL(`tel:${phone}`);
@@ -168,30 +175,40 @@ export default function UserDetail(props) {
                 </SafeAreaView>
             ) : (
                 <SafeAreaView style={styles.wallpaper}>
+
+                    {/* displays all categories  */}
                     <CategoryFilter
                         categories={categories}
                         categoryFilter={changeCtg}
                         active={active}
                         setActive={setActive}
                     />
+
                     {productsCtg.length > 0 ? (
+                        
                         <SafeAreaView style={styles.wallpaper}>
-                            {productsCtg.map((item, i) => {
+                        
+                            {productsCtg.map((item , i) => {
                                 return (
                                     <ProductListItem
-                                        key={i}
+        
+                                        // item.name is a object of a item 
+                                        key={item.name}
                                         item={item}
                                         navigation={props.navigation}
                                         categories={categories}
                                     />
                                 );
                             })}
+
                         </SafeAreaView>
+
                     ) : (
                         <View style={[styles.center, { height: height / 2 }]}>
                             <Text>No products found</Text>
                         </View>
                     )}
+
                 </SafeAreaView>
             )}
         </ScrollView>
