@@ -171,16 +171,16 @@ export default function ProductForm(props) {
             <View style={{ alignItems: "center" }}>
                 <Text style={styles.panelTitle}>Upload Photo</Text>
                 <Text style={styles.panelSubtitle}>
-                    Choose the photo that describes your product the best!
+                    Choose a photo for your product!
                 </Text>
             </View>
-            <TouchableOpacity style={styles.panelButton} onPress={takePhotoFromCamera}>
+            <TouchableOpacity style={styles.panelButton1} onPress={takePhotoFromCamera}>
                 <Text style={styles.panelButtonTitle}>Take Photo</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.panelButton} onPress={choosePhotoFromLibrary}>
+            <TouchableOpacity style={styles.panelButton2} onPress={choosePhotoFromLibrary}>
                 <Text style={styles.panelButtonTitle}>Choose From Library</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.panelButton} onPress={() => bs.current.snapTo(1)}>
+            <TouchableOpacity style={styles.panelButton3} onPress={() => bs.current.snapTo(1)}>
                 <Text style={styles.panelButtonTitle}>Cancel</Text>
             </TouchableOpacity>
         </View>
@@ -292,7 +292,8 @@ export default function ProductForm(props) {
                         onPress={() => {}}
                         style={[
                             styles.buttonContainer,
-                            { backgroundColor: customColor.medium, marginBottom: 80 }
+                            // cancel button background color
+                            { backgroundColor: "#FFB4B4", marginBottom: 80 }
                         ]}
                     >
                         <Text style={styles.buttonText}>CANCEL</Text>
@@ -325,7 +326,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         borderRadius: 10,
         //confirm button color
-        backgroundColor: "#FFCCCC"
+        backgroundColor: "#FF9292"
     },
     buttonText: {
         color: "white",
@@ -390,7 +391,7 @@ const styles = StyleSheet.create({
     },
     panelTitle: {
         fontSize: 27,
-        height: 35
+        height: 40
     },
     panelSubtitle: {
         fontSize: 14,
@@ -398,10 +399,24 @@ const styles = StyleSheet.create({
         height: 30,
         marginBottom: 10
     },
-    panelButton: {
+    panelButton1: {
         padding: 13,
         borderRadius: 10,
-        backgroundColor: "#00008B",
+        backgroundColor: "#FF9292",
+        alignItems: "center",
+        marginVertical: 7
+    },
+    panelButton2: {
+        padding: 13,
+        borderRadius: 10,
+        backgroundColor: "#FFB4B4",
+        alignItems: "center",
+        marginVertical: 7
+    },
+    panelButton3: {
+        padding: 13,
+        borderRadius: 10,
+        backgroundColor: "#FFCCCC",
         alignItems: "center",
         marginVertical: 7
     },
