@@ -240,7 +240,7 @@ const EditProfileScreen = ({ navigation }) => {
                                         <Icon
                                             name="camera"
                                             size={35}
-                                            color="grey"
+                                            color="white"
                                             style={{
                                                 opacity: 0.7,
                                                 alignItems: "center",
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
     commandButton: {
         padding: 15,
         borderRadius: 10,
-        backgroundColor: "#00008B",
+        backgroundColor: "#FF9292",
         alignItems: "center",
         marginTop: 10
     },
@@ -445,7 +445,7 @@ const styles = StyleSheet.create({
     panelButton: {
         padding: 13,
         borderRadius: 10,
-        backgroundColor: "#00008B",
+        backgroundColor: "#FFB4B4",
         alignItems: "center",
         marginVertical: 7
     },
@@ -473,6 +473,6 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: Platform.OS === "ios" ? 0 : -12,
         paddingLeft: 10,
-        color: "#05375a"
+        color: "gray"
     }
 });
