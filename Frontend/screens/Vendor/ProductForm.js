@@ -73,7 +73,7 @@ export default function ProductForm(props) {
             if (Platform.OS !== "web") {
                 const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
                 if (status !== "granted") {
-                    alert("Sorry, we need camera roll permissions to make this work!");
+                    alert("Allow camera permision to the upload photo!");
                 }
             }
         })();
@@ -199,7 +199,7 @@ export default function ProductForm(props) {
 
     return (
         <Container>
-            <Header style={{ backgroundColor: "#fff" }}>
+            <Header style={{ backgroundColor: "#ffff" }}>
                 <Left>
                     <Button transparent>
                         <MaterialCommunityIcons name="arrow-left" size={25} />
@@ -268,7 +268,7 @@ export default function ProductForm(props) {
                     <Item picker style={{ width: "80%" }}>
                         <Picker
                             mode="dropdown"
-                            iosIcon={<Icon color={"#007aff"} name="arrow-down" />}
+                            iosIcon={<Icon color={"#F2789F"} name="arrow-down" />}
                             placeholder="Select your Category"
                             style={{ width: Platform.OS === "ios" ? undefined : 120 }}
                             selectedValue={pickerValue}
@@ -324,7 +324,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         textAlign: "center",
         borderRadius: 10,
-        backgroundColor: customColor.dark
+        //confirm button color
+        backgroundColor: "#FFCCCC"
     },
     buttonText: {
         color: "white",
@@ -338,7 +339,7 @@ const styles = StyleSheet.create({
         padding: 0,
         justifyContent: "center",
         borderRadius: 10,
-        borderColor: customColor.medium,
+        borderColor: "#ffff",
         elevation: 5
     },
     image: {
@@ -358,7 +359,7 @@ const styles = StyleSheet.create({
     commandButton: {
         padding: 15,
         borderRadius: 10,
-        backgroundColor: "#00008B",
+        backgroundColor: "#FF9292",
         alignItems: "center",
         marginTop: 10
     },
