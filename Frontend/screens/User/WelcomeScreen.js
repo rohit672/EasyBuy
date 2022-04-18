@@ -8,7 +8,7 @@ const customColor = require("../../constants/Color");
 const WelcomeScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <StatusBar backgroundColor="#009387" barStyle="light-content" />
+            <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
             <View style={styles.header}>
                 <Animatable.Image
                     animation="bounceIn"
