@@ -189,7 +189,7 @@ const RegisterScreen = ({ navigation }) => {
                     {/* NAME */}
                     <Text style={[styles.text_footer]}>Name</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="drive-file-rename-outline" color="#05375a" size={20} />
+                        <MaterialIcons name="drive-file-rename-outline" color="#39311D" size={20} />
                         <TextInput
                             placeholder="Full Name"
                             style={styles.textInput}
@@ -201,7 +201,7 @@ const RegisterScreen = ({ navigation }) => {
                     {/* CONTACT */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Contact</Text>
                     <View style={styles.action}>
-                        <FontAwesome name="phone" color="#05375a" size={20} />
+                        <FontAwesome name="phone" color="#39311D" size={20} />
                         <TextInput
                             placeholder="Contact Number"
                             style={styles.textInput}
@@ -218,7 +218,7 @@ const RegisterScreen = ({ navigation }) => {
                     {/* EMAIL */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Email</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="alternate-email" color="#05375a" size={20} />
+                        <MaterialIcons name="alternate-email" color="#39311D" size={20} />
                         <TextInput
                             placeholder="Your Email"
                             style={styles.textInput}
@@ -258,7 +258,7 @@ const RegisterScreen = ({ navigation }) => {
                     {/* City */}
                     <Text style={[styles.text_footer]}>City</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="drive-file-rename-outline" color="#05375a" size={20} />
+                        <MaterialIcons name="drive-file-rename-outline" color="#39311D" size={20} />
                         <TextInput
                             placeholder="City..."
                             style={styles.textInput}
@@ -270,7 +270,7 @@ const RegisterScreen = ({ navigation }) => {
                     {/* Locality */}
                     <Text style={[styles.text_footer]}>Locality</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="drive-file-rename-outline" color="#05375a" size={20} />
+                        <MaterialIcons name="drive-file-rename-outline" color="#39311D" size={20} />
                         <TextInput
                             placeholder="Locality"
                             style={styles.textInput}
@@ -282,7 +282,7 @@ const RegisterScreen = ({ navigation }) => {
                     {/* PASSWORD */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Password</Text>
                     <View style={styles.action}>
-                        <Feather name="lock" color="#05375a" size={20} />
+                        <Feather name="lock" color="#39311D" size={20} />
                         <TextInput
                             placeholder="Your Password"
                             secureTextEntry={data.secureTextEntry ? true : false}
@@ -302,7 +302,7 @@ const RegisterScreen = ({ navigation }) => {
                     {/* CONFIRM PASSWORD */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Confirm Password</Text>
                     <View style={styles.action}>
-                        <Feather name="lock" color="#05375a" size={20} />
+                        <Feather name="lock" color="#39311D" size={20} />
                         <TextInput
                             placeholder="Confirm Your Password"
                             secureTextEntry={data.confirm_secureTextEntry ? true : false}
@@ -354,7 +354,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         textAlign: "center",
         borderRadius: 10,
-        borderColor: customColor.dark,
+        borderColor: "#FF9292",
         borderWidth: 1.5
     },
     buttonText: {
@@ -385,7 +385,7 @@ const styles = StyleSheet.create({
         fontSize: 30
     },
     text_footer: {
-        color: "#05375a",
+        color: "#39311D",
         fontSize: 18
     },
     action: {
@@ -406,7 +406,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: Platform.OS === "ios" ? 0 : -12,
         paddingLeft: 10,
-        color: "#05375a"
+        color: "#39311D"
     },
     errorMsg: {
         color: "#FF0000",
