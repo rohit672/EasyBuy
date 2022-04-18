@@ -215,7 +215,11 @@ const ProductContainer = (props) => {
             >
                 <Header searchBar rounded style={{ backgroundColor: "#F8F8F8", elevation: 10 }}>
                     <Item style={{ backgroundColor: "#E8E8E8", borderRadius: 20 }}>
-                        <Icon name="ios-menu" onPress={toggleOpen} />
+
+                        {/* Theme changer menu drawer */}
+                        {/* <Icon name="ios-menu" onPress={toggleOpen} /> */}
+
+
                         <Icon name="ios-search" />
                         <Input
                             placeholder="Search"
