@@ -122,6 +122,7 @@ const LoginScreen = ({ navigation }) => {
     };
 
     return (
+        //statusbar is top notification area 
         <View style={styles.container}>
             <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
             <View style={styles.header}>

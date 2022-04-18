@@ -128,12 +128,12 @@ const ProfileScreen = ({ navigation }) => {
                     ) } */}
 
                         <View style={styles.row}>
-                            <Icon name="map-marker-radius" color="#777777" size={20} />
+                            <Icon name="map-marker-radius" color="#000" size={20} />
                             <Text style={{ color: "#777777", marginLeft: 20 }}> {locality} , {city} </Text>
                         </View>
                     
                     <View style={styles.row}>
-                        <Icon name="phone" color="#777777" size={20} />
+                        <Icon name="phone" color="#000" size={20} />
                         <Text style={{ color: "#777777", marginLeft: 20 }}>{contact}</Text>
                     </View>
                     {/* <View style={styles.row}>
@@ -153,7 +153,7 @@ const ProfileScreen = ({ navigation }) => {
                     {!token.isVendor && (
                         <TouchableRipple onPress={() => {}}>
                             <View style={styles.menuItem}>
-                                <Icon name="heart-outline" color="#00008B" size={25} />
+                                <Icon name="heart-outline" color="#000" size={25} />
                                 <Text style={styles.menuItemText}>Your Favorites</Text>
                             </View>
                         </TouchableRipple>
@@ -169,7 +169,7 @@ const ProfileScreen = ({ navigation }) => {
                             }}
                         >
                             <View style={styles.menuItem}>
-                                <Icon name="cart" color="#00008B" size={25} />
+                                <Icon name="cart" color="#000" size={25} />
                                 <Text style={styles.menuItemText}>Your Products</Text>
                             </View>
                         </TouchableRipple>
@@ -177,13 +177,13 @@ const ProfileScreen = ({ navigation }) => {
 
                     <TouchableRipple>
                         <View style={styles.menuItem}>
-                            <Icon name="share-outline" color="#00008B" size={25} />
+                            <Icon name="share-outline" color="#000" size={25} />
                             <Text style={styles.menuItemText}>Tell Your Friends</Text>
                         </View>
                     </TouchableRipple>
                     <TouchableRipple onPress={() => {}}>
                         <View style={styles.menuItem}>
-                            <Icon name="account-check-outline" color="#00008B" size={25} />
+                            <Icon name="account-check-outline" color="#000" size={25} />
                             <Text style={styles.menuItemText}>Support</Text>
                         </View>
                     </TouchableRipple>
@@ -193,13 +193,13 @@ const ProfileScreen = ({ navigation }) => {
                         }}
                     >
                         <View style={styles.menuItem}>
-                            <Icon name="cog-outline" color="#00008B" size={25} />
+                            <Icon name="cog-outline" color="#000" size={25} />
                             <Text style={styles.menuItemText}>Settings</Text>
                         </View>
                     </TouchableRipple>
                     <TouchableRipple onPress={handleLogout}>
                         <View style={styles.menuItem}>
-                            <Icon name="logout" color="#00008B" size={25} />
+                            <Icon name="logout" color="#000" size={25} />
                             <Text style={styles.menuItemText}>Logout</Text>
                         </View>
                     </TouchableRipple>
