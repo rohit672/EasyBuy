@@ -27,7 +27,7 @@ const Banner = () => {
                         style={{ height: width / 2 }}
                         showButtons={false}
                         autoplay={true}
-                        autoplayTimeout={2}
+                        autoplayTimeout={3}
                     >
                         {bannerData.map((item) => {
                             return (
