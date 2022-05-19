@@ -58,7 +58,7 @@ export default function ListOfUsers({ navigation }) {
                 <Item style={{ backgroundColor: "#E8E8E8", borderRadius: 20 }}>
                     <Icon name="ios-search" />
                     <Input
-                        placeholder="Search"
+                        placeholder="Search by city"
                         // onChangeText={(text) => searchProduct(text)}
                     />
                     {focus == true ? <Icon name="ios-close" /> : null}
@@ -77,8 +77,9 @@ export default function ListOfUsers({ navigation }) {
                 </ScrollView>
             ) : (
                 <SafeAreaView>
-                    <View style={{ alignSelf: "center", marginTop: height / 2 }}>
-                        <ActivityIndicator style={{ margin: 10 }} size="large" color="blue" />
+                    <View style={{ alignSelf: "center", marginTop: height / 3 }}>
+                        {/* change the color of loading bar in the vendors list */}
+                        <ActivityIndicator style={{ margin: 10 }} size="large" color="#FF9292" />
                         <Text note>Loading Vendors....</Text>
                     </View>
                 </SafeAreaView>

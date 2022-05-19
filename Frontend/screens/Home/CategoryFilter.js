@@ -55,16 +55,17 @@ const CategoryFilter = (props) => {
     );
 };
 
+//category color  on home screen
 const styles = StyleSheet.create({
     center: {
         justifyContent: "center",
         alignItems: "center"
     },
     active: {
-        backgroundColor: customColor.dark
+        backgroundColor: customColor.oncolor
     },
     inactive: {
-        backgroundColor: customColor.light
+        backgroundColor: customColor.offcolor
     }
 });
 

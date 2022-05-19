@@ -20,7 +20,8 @@ export default function ProductCard(props) {
                     style={{ backgroundColor: themeContext[themeContext.current_theme].background }}
                 >
                     <Body>
-                        <Text
+                        {/* truncate the product name in the home screen  */}
+                        <Text numberOfLines={1}
                             style={{
                                 color: themeContext[themeContext.current_theme].foreground,
                                 fontWeight: "bold"
@@ -72,8 +73,9 @@ export default function ProductCard(props) {
                 </CardItem>
                 <CardItem
                     style={{ backgroundColor: themeContext[themeContext.current_theme].background }}
-                >
-                    <Text style={{ color: themeContext[themeContext.current_theme].foreground }}>
+                >   
+                    {/* truncate the description of the product */}
+                    <Text numberOfLines={1} style={{ color: themeContext[themeContext.current_theme].foreground }}>
                         {description}
                     </Text>
                 </CardItem>

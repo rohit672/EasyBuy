@@ -41,7 +41,7 @@ export default function UserCard(props) {
                         <ListItem.Subtitle>{u.products.length} product(s)</ListItem.Subtitle>
                     </ListItem.Content>
                     <ListItem.Chevron
-                        iconProps={{ name: "phone", size: 20, color: "#843" }}
+                        iconProps={{ name: "phone", size: 20, color: "#000" }}
                         onPress={() => openCallDialer(u.contact)}
                     />
                     <ListItem.Chevron iconProps={{ color: "#fff" }} />
