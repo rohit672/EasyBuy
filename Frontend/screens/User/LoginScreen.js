@@ -143,7 +143,7 @@ const LoginScreen = ({ navigation }) => {
                     />
                     {data.check_textInputChange ? (
                         <Animatable.View animation="bounceIn">
-                            <Feather name="check-circle" color="green" size={20} />
+                            <Feather name="check-circle" color="black" size={20} />
                         </Animatable.View>
                     ) : null}
                 </View>
@@ -273,7 +273,7 @@ const styles = StyleSheet.create({
         fontSize: 14
     },
     successMsg: {
-        color: "#0000FF",
+        color: "#FF0000",
         fontSize: 14
     },
     button: {
