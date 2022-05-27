@@ -85,6 +85,7 @@ export default function ProductDetails(props) {
     //         }
     //     })();
     // };
+    
     if (similarProducts.length > 0) {
         similarProductsData = [];
         similarProducts.forEach((item) => {
