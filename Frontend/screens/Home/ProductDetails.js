@@ -58,36 +58,42 @@ export default function ProductDetails(props) {
         };
     }, [item]);
 
-    const handleDeleteItem = () => {
+    // const handleDeleteItem = () => {
 
-        console.log("working") ;
+    //     console.log("working") ;
 
-        (async () => {
-            let unDecodedToken = await AsyncStorage.getItem("jwt");
-            const requestConfig = {
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    Authorization: `Bearer ${unDecodedToken}`
-                }
-            };
-            try {
-                let response = await axios.delete(
-                    `${REST_API_URL}/api/vendor/item/${item._id}`,
-                    {},
-                    requestConfig
-                );
-                response = response.data;
-                if (response.success === true) {
-                    props.navigation.navigate("Home");
-                    ToastAndroid.show("Item removed successfully", ToastAndroid.SHORT);
-                } else {
-                    ToastAndroid.show(response.message, ToastAndroid.SHORT);
-                }
-            } catch (error) {
-                console.log("API call error", error);
-            }
-        })();
-    };
+    //     (async () => {
+    //         let unDecodedToken = await AsyncStorage.getItem("jwt");
+    //         const requestConfig = {
+    //             headers: {
+    //                 "Content-Type": "application/x-www-form-urlencoded",
+    //                 Authorization: `Bearer ${unDecodedToken}`
+    //             }
+    //         };
+    //         try {
+    //             let response = await axios.delete(
+    //                 `${REST_API_URL}/api/vendor/item/${item._id}`,
+    //                 {},
+    //                 requestConfig
+    //             );
+    //             response = response.data;
+    //             if (response.success === true) {
+    //                 props.navigation.navigate("Home");
+    //                 ToastAndroid.show("Item removed successfully", ToastAndroid.SHORT);
+    //             } else {
+    //                 ToastAndroid.show(response.message, ToastAndroid.SHORT);
+    //             }
+    //         } catch (error) {
+    //             console.log("API call error", error);
+    //         }
+    //     })();
+    // };
+
+
+    const editProfileHandler = () => {
+           
+          
+    }
 
     const handleDeleteProperty = async (id) => {
         try{
@@ -227,7 +233,7 @@ export default function ProductDetails(props) {
                 <View style={styles.imageTextConatiner2}>
                     <TouchableOpacity style={styles.mapSticker}>
                         <Icon size={30} name="location-pin" />
-                        <Text style={{ fontSize: 10 }} onPress = {handleDeleteItem}>Delete</Text>
+                        <Text style={{ fontSize: 10 }} onPress = {editProfileHandler}>Edit Product</Text>
                         
                     </TouchableOpacity>
                 </View>

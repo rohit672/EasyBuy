@@ -8,6 +8,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import HomeNavigator from "./HomeNavigator";
 import AddProductNavigator from "./AddProductNavigator";
 import ProfileNavigator from "./ProfileNavigator";
+import EditProductNAvigator from "./EditProductNavigator"; 
 import MapNavigator from "./MapNavigator";
 import ContactNavigator from "./ContactNavigator";
 const customColor = require("../constants/Color");
@@ -82,6 +83,15 @@ export default function Main() {
                     tabBarIcon: ({ color }) => <Icon name="user" color={color} size={30} />
                 }}
             />
+
+             <Tab.Screen
+                name="EditProduct"
+                component={EditProductNAvigator}
+                options={{
+                    tabBarIcon: ({ color }) => <Icon name="playlist-check" color={color} size={30} />
+                }}
+            />
+            
 
         </Tab.Navigator>
     );

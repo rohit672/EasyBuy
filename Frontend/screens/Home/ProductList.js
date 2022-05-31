@@ -7,6 +7,8 @@ const { width } = Dimensions.get("window");
 export default function ProductList(props) {
     const { item } = props;
     return (
+
+    
         <TouchableOpacity
             onPress={() => props.navigation.navigate("Product Details", { item: item })}
             style={{ width: "50%" }}
