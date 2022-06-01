@@ -38,17 +38,17 @@ export default function ProductListItem(props) {
                     source={{ uri: product.imageUrl }}
                 />
                 <ListItem.Content >
-                    <ListItem.Title style={{ fontWeight: "bold" }}>{product.name}</ListItem.Title>
-                    <ListItem.Subtitle>{product.description}</ListItem.Subtitle>
+                    <ListItem.Title numberOfLines={1} style={{ fontWeight: "bold" }}>{product.name}</ListItem.Title>
+                    <ListItem.Subtitle numberOfLines={1}>{product.description}</ListItem.Subtitle>
                     <StarRating ratings={3} reviews={99} />
                 </ListItem.Content>
                 <ListItem.Content>
-                    <ListItem.Title style={{ fontWeight: "bold" }}>
+                    <ListItem.Title numberOfLines={1} style={{ fontWeight: "bold" }}>
                         <ListItem.Subtitle style={{ fontSize: 10 }}>Price : </ListItem.Subtitle>₹{" "}
                         {product.cost}
                     </ListItem.Title>
                     <ListItem.Subtitle>{product.category} Item</ListItem.Subtitle>
-                    <ListItem.Subtitle style={{ fontSize: 10 }}>
+                    <ListItem.Subtitle  numberOfLines={1} style={{ fontSize: 10 }}>
                         Given price is the price per unit item.{" "}
                     </ListItem.Subtitle>    
                 </ListItem.Content>

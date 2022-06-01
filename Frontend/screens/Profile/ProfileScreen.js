@@ -175,6 +175,23 @@ const ProfileScreen = ({ navigation }) => {
                         </TouchableRipple>
                     )}
 
+                    {token.isVendor && (
+                        <TouchableRipple
+                            onPress={() => {
+                                navigation.navigate("Edit Product", {
+                                    user: user,
+                                    navigation: navigation
+                                });
+                            }}
+                        >
+                            <View style={styles.menuItem}>
+                                <Icon name="circle-edit-outline" color="#000" size={25} />
+                                <Text style={styles.menuItemText}>Edit Products</Text>
+                            </View>
+                        </TouchableRipple>
+                    )}
+
+
                     <TouchableRipple>
                         <View style={styles.menuItem}>
                             <Icon name="share-outline" color="#000" size={25} />

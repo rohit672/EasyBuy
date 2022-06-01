@@ -205,7 +205,7 @@ export default function UserDetail(props) {
 
                     ) : (
                         <View style={[styles.center, { height: height / 2 }]}>
-                            <Text>No products found</Text>
+                            <Text style={styles.txt}>No products found</Text>
                         </View>
                     )}
 
@@ -229,7 +229,11 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         backgroundColor: "#E8E8E8"
     },
-
+    txt :{
+        marginTop: 120,
+        marginLeft: 120,
+        justifyContent: "center"
+    },
     image: {
         height: height / 3,
         width: width / 3,

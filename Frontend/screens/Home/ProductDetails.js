@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {
     StyleSheet,
     ScrollView,
@@ -232,8 +233,9 @@ export default function ProductDetails(props) {
                 </ListItem.Content>
                 <View style={styles.imageTextConatiner2}>
                     <TouchableOpacity style={styles.mapSticker}>
-                        <Icon size={30} name="location-pin" />
-                        <Text style={{ fontSize: 10 }} onPress = {editProfileHandler}>Edit Product</Text>
+                       <MaterialCommunityIcons name="circle-edit-outline" size={30} color="black" />
+                        {/* <Icon size={30} name="circle-edit-outline" /> */}
+                        <Text style={{ fontSize: 10 }} onPress = {editProfileHandler}>Edit</Text>
                         
                     </TouchableOpacity>
                 </View>
@@ -364,7 +366,7 @@ const styles = StyleSheet.create({
     mapSticker: {
         height: 60,
         width: 50,
-        backgroundColor: customColors.light,
+        backgroundColor: '#ffff',
         marginRight: 10,
         alignItems: "center",
         justifyContent: "center",
@@ -375,7 +377,7 @@ const styles = StyleSheet.create({
     callSticker: {
         height: 60,
         width: 50,
-        backgroundColor: customColors.light,
+        backgroundColor: '#ffff',
         marginRight: 70,
         alignItems: "center",
         justifyContent: "center",

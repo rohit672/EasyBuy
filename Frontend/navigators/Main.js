@@ -83,14 +83,18 @@ export default function Main() {
                     tabBarIcon: ({ color }) => <Icon name="user" color={color} size={30} />
                 }}
             />
-
+{/* 
              <Tab.Screen
                 name="EditProduct"
                 component={EditProductNAvigator}
                 options={{
-                    tabBarIcon: ({ color }) => <Icon name="playlist-check" color={color} size={30} />
+                    tabBarIcon: ({ color }) => (
+                        <View>
+                            <MaterialCommunityIcons name="circle-edit-outline" size={30} color={color} />
+                        </View>
+                    )
                 }}
-            />
+            /> */}
             
 
         </Tab.Navigator>
