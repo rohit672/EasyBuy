@@ -162,7 +162,7 @@ const ProfileScreen = ({ navigation }) => {
                     {token.isVendor && (
                         <TouchableRipple
                             onPress={() => {
-                                navigation.navigate("Vendor Details", {
+                                navigation.navigate("Vendor Products", {
                                     user: user,
                                     navigation: navigation
                                 });

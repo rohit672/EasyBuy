@@ -17,8 +17,7 @@ import CategoryFilter from "../../screens/Home/CategoryFilter";
 import { REST_API_URL } from "../../constants/URLs";
 import axios from "axios";
 import ProductList from "../../screens/Home/ProductList";
-import ProductListItem from "../../components/Card/ProductListItem";
-import EditProductListItem from "../../components/Card/EditProductListItem";
+import ProductListItem from "../Card/ProductListItem";
 
 const { height, width } = Dimensions.get("window");
 const colors = require("../../constants/Color");
@@ -94,80 +93,18 @@ export default function UserDetail(props) {
         <ScrollView>
             <Header style={{ backgroundColor: "#fff" }}>
                 <Left>
-                    <Button transparent onPress={() => props.navigation.navigate("Profile")}>
+                    <Button transparent onPress={() => props.navigation.navigate("Contact")}>
                         <Icon name="arrow-left" size={25} />
                     </Button>
                 </Left>
                 <Body>
-                    <Title>Edit Products</Title>
+                    <Title>Your Products</Title>
                 </Body>
                 <Right>
                     <Button transparent></Button>
                 </Right>
             </Header>
-            {/* <SafeAreaView>
-                <View style={styles.card}>
-                    <Image style={styles.image} source={{ uri: `${user.imageUrl}` }} />
-                    <View style={styles.cardContent}>
-                        <ListItem
-                            style={[styles.listItemStyle, { marginTop: 0 }]}
-                            containerStyle={{ borderRadius: 10 }}
-                        >
-                            <ListItem.Subtitle style={{ fontSize: 10 }}>Name :</ListItem.Subtitle>
-                            <ListItem.Title>{user.name}</ListItem.Title>
-                        </ListItem>
-
-                        <ListItem
-                            style={styles.listItemStyle}
-                            containerStyle={{ borderRadius: 10 }}
-                        >
-                            <ListItem.Subtitle style={{ fontSize: 10 }}>Email :</ListItem.Subtitle>
-                            <ListItem.Title>{user.email}</ListItem.Title>
-                        </ListItem>
-
-                        <ListItem
-                            style={styles.listItemStyle}
-                            containerStyle={{ borderRadius: 10 }}
-                        >
-                            <ListItem.Subtitle style={{ fontSize: 10 }}>Location :</ListItem.Subtitle>
-                            <ListItem.Title>{user.locality} , {user.city}</ListItem.Title>
-                        </ListItem>
-
-                        <ListItem
-                            style={styles.listItemStyle}
-                            containerStyle={{ borderRadius: 10 }}
-                        >
-                            <ListItem.Subtitle style={{ fontSize: 10 }}>
-                                Contact :
-                            </ListItem.Subtitle>
-                            <ListItem.Title>{user.contact}</ListItem.Title>
-                        </ListItem>
-
-                        <View
-                            style={[
-                                styles.contactIcon,
-                                { backgroundColor: "#fff", marginBottom: 0 }
-                            ]}
-                        >
-                            <Icon
-                                name="phone"
-                                size={25}
-                                style={styles.iconStyle}
-                                onPress={() => openCallDialer(user.contact)}
-                            />
-                            <View style={styles.verticleLine}></View>
-                            <Icon
-                                name="whatsapp"
-                                size={25}
-                                style={styles.iconStyle}
-                                onPress={() => openMessageApp(user.contact)}
-                            />
-                        </View>
-                    </View>
-                </View>
-                <View style={styles.card}></View>
-            </SafeAreaView> */}
-
+           
             {isLoading ? (
                 <SafeAreaView>
                     <View style={{ alignSelf: "center", marginTop: 50 }}>
@@ -192,7 +129,7 @@ export default function UserDetail(props) {
                         
                             {productsCtg.map((item , i) => {
                                 return (
-                                    <EditProductListItem
+                                    <ProductListItem
         
                                         // item.name is a object of a item 
                                         key={item.name}
@@ -207,7 +144,7 @@ export default function UserDetail(props) {
 
                     ) : (
                         <View style={[styles.center, { height: height / 2 }]}>
-                            <Text style={styles.txt}>No Products Found</Text>
+                            <Text style={styles.txt}>No products found</Text>
                         </View>
                     )}
 
@@ -225,17 +162,17 @@ const styles = StyleSheet.create({
     wallpaper: {
         backgroundColor: "#E8E8E8"
     },
-    txt :{
-        marginTop: 120,
-        marginLeft: 120,
-        justifyContent: "center"
-    },
+
     card: {
         display: "flex",
         flexDirection: "row",
         backgroundColor: "#E8E8E8"
     },
-
+    txt :{
+        marginTop: 120,
+        marginLeft: 120,
+        justifyContent: "center"
+    },
     image: {
         height: height / 3,
         width: width / 3,

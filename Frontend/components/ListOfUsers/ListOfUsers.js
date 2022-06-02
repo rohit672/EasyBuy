@@ -18,6 +18,10 @@ export default function ListOfUsers({ navigation }) {
     const [isLoading, setIsLoading] = useState();
     const [focus, setfocus] = useState(false);
     const [refreshing, setRefreshing] = useState(false);
+    
+    //modification 
+    const [vendors , setVendor] = useState("") ; 
+    const [newUser , setNewUsers] = useState([]) ; 
 
     const { height } = Dimensions.get("screen");
 
@@ -52,14 +56,20 @@ export default function ListOfUsers({ navigation }) {
         })();
     }, []);
 
+
+    const searchClick = () => {
+         
+    }
+
+
     return (
         <SafeAreaView>
             <Header searchBar rounded style={{ backgroundColor: "#F8F8F8" }}>
                 <Item style={{ backgroundColor: "#E8E8E8", borderRadius: 20 }}>
-                    <Icon name="ios-search" />
+                    <Icon name="ios-search" onPress={searchClick}/>
                     <Input
-                        placeholder="Search by city"
-                        // onChangeText={(text) => searchProduct(text)}
+                        placeholder="Search By City"
+                        onChangeText={(text) => setVendor(text)} 
                     />
                     {focus == true ? <Icon name="ios-close" /> : null}
                 </Item>
@@ -72,8 +82,13 @@ export default function ListOfUsers({ navigation }) {
                     containerStyle={{ padding: 0 }}
                 >
                     {users.map((u, i) => {
-                        return <UserCard key={i} user={u} navigation={navigation} />;
+                       
+                        if (vendors == "") 
+                          return <UserCard key={i} user={u} navigation={navigation} />;
+                        else if (u.city.toLowerCase() == vendors.toLowerCase()) 
+                          return <UserCard key={i} user={u} navigation={navigation} />;
                     })}
+
                 </ScrollView>
             ) : (
                 <SafeAreaView>

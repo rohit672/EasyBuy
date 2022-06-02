@@ -8,6 +8,7 @@ import Contact from "../screens/Vendor/Contact";
 import EditProduct from "../screens/Home/EditProducts"
 import Home from "./HomeNavigator";
 import ProductContainer from "../screens/Home/ProductContainer";
+import ProductsOfVendor from "../components/ListOfProducts/ListOfAllProductsForVendor";
 
 const Stack = createStackNavigator();
 
@@ -29,8 +30,8 @@ function MyStack() {
                 }}
             />
             <Stack.Screen
-                name="Vendor Details"
-                component={UserDetail}
+                name="Vendor Products"
+                component={ProductsOfVendor}
                 options={{
                     headerShown: false
                 }}
