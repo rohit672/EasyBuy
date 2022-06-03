@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Dimensions, ScrollView } from "react-native";
 import { Left, Body, ListItem, Thumbnail, Text } from "native-base";
+import { Avatar } from "react-native-elements";
 
 const { width } = Dimensions.get("window");
 
@@ -18,11 +19,14 @@ const SearchedProduct = (props) => {
                         avatar
                     >
                         <Left>
-                            <Thumbnail
-                                source={{
-                                    uri: item.image
-                                }}
-                            />
+                        <Avatar
+                            rounded
+                            size={50}
+                            containerStyle={{ elevation: 20 }}
+                             source={{
+                             uri: item.imageUrl
+                              }}
+                         />
                         </Left>
                         <Body>
                             <Text>{item.name}</Text>

@@ -16,12 +16,15 @@ import UserCard from "./UserCard";
 export default function ListOfUsers({ navigation }) {
     const [users, setUsers] = useState([]);
     const [isLoading, setIsLoading] = useState();
-    const [focus, setfocus] = useState(false);
+    const [focus, setFocus] = useState();
     const [refreshing, setRefreshing] = useState(false);
+
     
     //modification 
     const [vendors , setVendor] = useState("") ; 
     const [newUser , setNewUsers] = useState([]) ; 
+    const [placeHolder , setPlaceHolder] = useState("") ; 
+    const placeHolderText = ["Phone" , "Email"] ;
 
     const { height } = Dimensions.get("screen");
 
@@ -39,6 +42,8 @@ export default function ListOfUsers({ navigation }) {
 
         fetchAPI();
         setIsLoading(false);
+        setFocus(false) ;
+
     }, []);
 
     const onRefresh = React.useCallback(() => {
@@ -61,6 +66,14 @@ export default function ListOfUsers({ navigation }) {
          
     }
 
+    const openList = () => {
+        setFocus(true);
+    };
+
+    const onBlur = () => {
+        setFocus(false);
+    };
+
 
     return (
         <SafeAreaView>
@@ -68,10 +81,12 @@ export default function ListOfUsers({ navigation }) {
                 <Item style={{ backgroundColor: "#E8E8E8", borderRadius: 20 }}>
                     <Icon name="ios-search" onPress={searchClick}/>
                     <Input
-                        placeholder="Search By City"
+                      
+                        style = {[{fontSize:13}]}
+                        onFocus={openList}
+                        placeholder="Search Vendors By City, Area, Name, Contact..."
                         onChangeText={(text) => setVendor(text)} 
                     />
-                    {focus == true ? <Icon name="ios-close" /> : null}
                 </Item>
             </Header>
             {!isLoading ? (
@@ -82,11 +97,23 @@ export default function ListOfUsers({ navigation }) {
                     containerStyle={{ padding: 0 }}
                 >
                     {users.map((u, i) => {
-                       
+
                         if (vendors == "") 
                           return <UserCard key={i} user={u} navigation={navigation} />;
-                        else if (u.city.toLowerCase() == vendors.toLowerCase()) 
+                        else {
+
+                          if (u.city.toLocaleLowerCase().includes(vendors.toLocaleLowerCase()) ||
+                             
+                              u.locality.toLocaleLowerCase().includes(vendors.toLocaleLowerCase()) ||
+
+                              u.name.toLocaleLowerCase().includes(vendors.toLocaleLowerCase()) || 
+
+                              u.contact.toLocaleLowerCase().includes(vendors.toLocaleLowerCase())
+                          
+                          ) 
                           return <UserCard key={i} user={u} navigation={navigation} />;
+
+                        }
                     })}
 
                 </ScrollView>

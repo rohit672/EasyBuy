@@ -222,11 +222,11 @@ const ProductContainer = (props) => {
 
                         <Icon name="ios-search" />
                         <Input
-                            placeholder="Search"
+                            placeholder="Search Prodcuts"
                             onFocus={openList}
                             onChangeText={(text) => searchProduct(text)}
                         />
-                        {focus == true ? <Icon onPress={onBlur} name="ios-close" /> : null}
+                        {/* {focus == true ? <Icon onPress={onBlur} name="ios-close" /> : null} */}
                     </Item>
                 </Header>
                 {focus == true ? (
