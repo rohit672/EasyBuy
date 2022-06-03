@@ -18,6 +18,7 @@ import { REST_API_URL } from "../../constants/URLs";
 import axios from "axios";
 import ProductList from "../../screens/Home/ProductList";
 import ProductListItem from "../Card/ProductListItem";
+import { Avatar,Caption } from "react-native-paper";
 
 const { height, width } = Dimensions.get("window");
 const colors = require("../../constants/Color");
@@ -106,7 +107,7 @@ export default function UserDetail(props) {
             </Header>
             <SafeAreaView>
                 <View style={styles.card}>
-                    <Image style={styles.image} source={{ uri: `${user.imageUrl}` }} />
+                    {/* <Image style={styles.image} source={{ uri: `${user.imageUrl}` }} /> */}
                     <View style={styles.cardContent}>
                         <ListItem
                             style={[styles.listItemStyle, { marginTop: 0 }]}
@@ -142,7 +143,7 @@ export default function UserDetail(props) {
                             <ListItem.Title>{user.contact}</ListItem.Title>
                         </ListItem>
 
-                        <View
+                        <View 
                             style={[
                                 styles.contactIcon,
                                 { backgroundColor: "#fff", marginBottom: 0 }
@@ -163,6 +164,17 @@ export default function UserDetail(props) {
                             />
                         </View>
                     </View>
+                    
+                    {/* image card */}
+                    <View style={styles.card2} >
+                            <Avatar.Image 
+                                source={{
+                                    uri:`${user.imageUrl}`
+                                }}
+                                size={100}
+                            />
+                    </View>
+
                 </View>
                 <View style={styles.card}></View>
             </SafeAreaView>
@@ -225,9 +237,23 @@ const styles = StyleSheet.create({
     },
 
     card: {
+        // marginLeft: 8,
         display: "flex",
         flexDirection: "row",
-        backgroundColor: "#E8E8E8"
+        backgroundColor: "#E8E8E8",
+    },
+    
+    card2: {
+        display: "flex",
+        position: 'absolute',
+        right: 30,
+        top: 25,
+        flexDirection: "row",
+        // backgroundColor: "#F8F8F8",
+    },
+    image2: {
+        margin: 10,
+        marginRight: 0,
     },
     txt :{
         marginTop: 120,
@@ -241,10 +267,15 @@ const styles = StyleSheet.create({
         margin: 10,
         marginRight: 0
     },
+    caption: {
+        fontSize: 14,
+        lineHeight: 14,
+        fontWeight: "500"
+    },
     cardContent: {
-        width: (2 * width) / 3,
+        // width: (2 * width) / 3,
         margin: 10,
-        marginLeft: 5,
+        // marginLeft: 5,
         backgroundColor: "#F8F8F8",
         borderRadius: 10
     },
@@ -255,7 +286,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-evenly",
         width: "100%",
         paddingBottom: 12,
-        borderRadius: 10
+        borderRadius: 10,
     },
     verticleLine: {
         height: "100%",

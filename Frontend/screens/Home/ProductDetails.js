@@ -10,7 +10,8 @@ import {
     ImageBackground,
     TouchableOpacity,
     Image,
-    Text
+    Text,
+    Linking
 } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -18,11 +19,15 @@ import { REST_API_URL } from "../../constants/URLs";
 import axios from "axios";
 import { Avatar, ListItem } from "react-native-elements";
 import StarRating from "../../components/Card/StarRating";
-import Icon from "react-native-vector-icons/MaterialIcons";
+// import Icon from "react-native-vector-icons/MaterialIcons";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 // import SimilarProducts from "../../components/Card/SimilarProducts";
 
 const { height, width } = Dimensions.get("window");
 const customColors = require("../../constants/Color");
+const colors = require("../../constants/Color");
+
+
 
 export default function ProductDetails(props) {
     const [item, setItem] = React.useState(props.route.params.item);
@@ -31,6 +36,16 @@ export default function ProductDetails(props) {
     const scrollRef = useRef();
     let similarProductsData = [];
     let vendorProductData = [];
+
+
+    const message = "Hi I want to buy a few products from you!";
+    const openCallDialer = (phone) => {
+        Linking.openURL(`tel:${phone}`);
+    };
+    
+    const openMessageApp = (phone) => {
+        Linking.openURL(`whatsapp://send?phone=+91${phone}&text=${message}`);
+    };
 
     // const token = useSelector((state) => state.token);
     useEffect(() => {
@@ -231,18 +246,35 @@ export default function ProductDetails(props) {
                         <ListItem.Title style={{ fontSize: 15 }}>{item.seller.name}</ListItem.Title>
                     </ListItem.Subtitle>
                 </ListItem.Content>
+                  {/* <Icon size={30} name="circle-edit-outline" /> */}
+                    {/* <View style={[ styles.contactIcon, { backgroundColor: "#fff", marginBottom: 0 } ]}>
+                            <Icon
+                                name="phone"
+                                size={25}
+                                style={styles.iconStyle}
+                                onPress={() => openCallDialer(user.contact)}
+                            />
+                            <View style={styles.verticleLine}></View>
+                            <Icon
+                                name="whatsapp"
+                                size={25}
+                                style={styles.iconStyle}
+                                onPress={() => openMessageApp(user.contact)}
+                            />
+                    </View> */}
+
                 <View style={styles.imageTextConatiner2}>
                     <TouchableOpacity style={styles.mapSticker}>
-                       <MaterialCommunityIcons name="circle-edit-outline" size={30} color="black" />
-                        {/* <Icon size={30} name="circle-edit-outline" /> */}
-                        <Text style={{ fontSize: 10 }} onPress = {editProfileHandler}>Edit</Text>
+                    <Icon name="whatsapp" size={30} style={styles.iconStyle} onPress={() => openMessageApp(item.seller.contact)}    />
+                       {/* <MaterialCommunityIcons name="circle-edit-outline" size={30} color="black" /> */}
+                        {/* <Text style={{ fontSize: 10 }} onPress = {editProfileHandler}>Edit</Text> */}
                         
                     </TouchableOpacity>
-                </View>
+                </View> 
                 <View style={styles.imageTextConatiner2}>
                     <TouchableOpacity style={styles.callSticker}>
-                        <Icon size={30} name="phone" />
-                        <Text style={{ fontSize: 10 }}>CALL</Text>
+                        <Icon name="phone" size={30} style={styles.iconStyle}  onPress={() => openCallDialer(item.seller.contact)}/>
+                        {/* <Text style={{ fontSize: 10 }}>CALL</Text> */}
                     </TouchableOpacity>
                 </View>
             </ListItem>
@@ -322,6 +354,29 @@ const styles = StyleSheet.create({
         width: width,
         height: height / 2.5
     },
+    contactIcon: {
+        padding: 10,
+        alignItems: "center",
+        flexDirection: "row",
+        justifyContent: "space-evenly",
+        width: "100%",
+        paddingBottom: 12,
+        borderRadius: 10
+    },
+    verticleLine: {
+        height: "100%",
+        width: 1,
+        backgroundColor: "#909090"
+    },
+    iconStyle: {
+        color: colors.dark,
+        textAlign: "center",
+        width: 50,
+        shadowOpacity: 2,
+        textShadowRadius: 10,
+        textShadowOffset: { width: 3, height: 3 }
+    },
+
     imageTextConatiner: {
         position: "absolute",
         left: 0,
@@ -371,7 +426,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         borderTopRightRadius: 15,
-        elevation: 10
+        // elevation: 10
     },
 
     callSticker: {
@@ -382,7 +437,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         borderTopRightRadius: 15,
-        elevation: 10
+        // elevation: 10
     },
     listContainer: {
         flex: 1,
