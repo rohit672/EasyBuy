@@ -9,9 +9,9 @@ const Banner = () => {
 
     useEffect(() => {
         setBannerData([
-            "https://i.pinimg.com/originals/02/cd/62/02cd62d565293133bae12496bf9a519e.jpg",
-            "https://us.123rf.com/450wm/leya1703/leya17032103/leya1703210300007/166372479-traditional-indian-food-on-white-background-horizontal-flyer-vector-illustration-doodle-black-and-wh.jpg?ver=6",
-            "https://www.yardproduct.com/blog/wp-content/uploads/2016/01/gardening-banner.jpg"
+            "https://res.cloudinary.com/dphhvftfg/image/upload/v1654329439/12_djakbs.jpg",
+            "https://res.cloudinary.com/dphhvftfg/image/upload/v1654327733/13_q2a0zu.png",
+            "https://res.cloudinary.com/dphhvftfg/image/upload/v1654329288/16_zthbdo.jpg"
         ]);
 
         return () => {
