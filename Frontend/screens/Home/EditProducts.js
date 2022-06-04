@@ -7,7 +7,8 @@ import {
     Linking,
     ScrollView,
     StyleSheet,
-    View
+    View,
+    StatusBar
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
@@ -92,6 +93,7 @@ export default function UserDetail(props) {
 
     return (
         <ScrollView>
+            <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
             <Header style={{ backgroundColor: "#fff" }}>
                 <Left>
                     <Button transparent onPress={() => props.navigation.navigate("Profile")}>

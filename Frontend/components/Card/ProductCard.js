@@ -47,7 +47,7 @@ export default function ProductCard(props) {
                     style={{ backgroundColor: themeContext[themeContext.current_theme].background }}
                 >
                     <Left>
-                        <StarRating ratings={4} reviews={99} />
+                        <StarRating ratings={4} reviews={250} />
                     </Left>
                     <Right>
                         <Icon active name="chatbubbles" />

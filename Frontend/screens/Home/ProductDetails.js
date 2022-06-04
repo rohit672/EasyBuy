@@ -157,7 +157,7 @@ export default function ProductDetails(props) {
                                 ₹ {item.cost}
                             </ListItem.Subtitle>
                         </ListItem.Subtitle>
-                        <StarRating ratings={3} reviews={99} />
+                        <StarRating ratings={4} reviews={250} />
                     </ListItem.Content>
                 </ListItem>
             );
@@ -197,7 +197,7 @@ export default function ProductDetails(props) {
                                 ₹ {item.cost}
                             </ListItem.Subtitle>
                         </ListItem.Subtitle>
-                        <StarRating ratings={3} reviews={99} />
+                        <StarRating ratings={4} reviews={250} />
                     </ListItem.Content>
                 </ListItem>
             );
@@ -239,7 +239,7 @@ export default function ProductDetails(props) {
                     </ListItem.Subtitle>
                     <ListItem.Subtitle style={{ fontSize: 10, marginBottom: height / 50 }}>
                         RATINGS : {"  "}
-                        <StarRating ratings={3} reviews={99} />
+                        <StarRating ratings={4} reviews={250} />
                     </ListItem.Subtitle>
                     <ListItem.Subtitle style={{ fontSize: 10 }}>
                         SELLER : {"  "}
