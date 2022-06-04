@@ -9,7 +9,7 @@ import {
     ToastAndroid,
     StyleSheet,
     Platform,
-    ScrollView
+    ScrollView,
 } from "react-native";
 
 import axios from "axios";

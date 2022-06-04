@@ -40,7 +40,7 @@ export default function ProductListItem(props) {
                 <ListItem.Content >
                     <ListItem.Title numberOfLines={1} style={{ fontWeight: "bold" }}>{product.name}</ListItem.Title>
                     <ListItem.Subtitle numberOfLines={1}>{product.description}</ListItem.Subtitle>
-                    <StarRating ratings={4} reviews={99} />
+                    <StarRating ratings={4} reviews={250} />
                 </ListItem.Content>
                 <ListItem.Content>
                     <ListItem.Title numberOfLines={1} style={{ fontWeight: "bold" }}>
