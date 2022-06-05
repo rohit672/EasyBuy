@@ -128,7 +128,7 @@ const OnboardingScreen = () => {
            Sample Text..
           </Text>
         </View>
-        <View showsButtons = {false     } style={styles.slide}>
+        <View showsButtons = {false} style={styles.slide}>
           <Image source={require("./images/img1.png")} style={styles.img} />
           <Text style={styles.title}>Welcome</Text>
           <Text style={styles.text}>
