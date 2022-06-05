@@ -99,7 +99,7 @@ const OnBoard2 = ({navigation}) => {
                 styles.indicator,
                 currentSlideIndex == index && {
                   backgroundColor: 'orange',
-                  width: 25,
+                  width: 26,
                 },
               ]}
             />
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   indicator: {
-    height: 2.5,
+    height: 4.0,
     width: 10,
     backgroundColor: COLORS.grey2,
     marginHorizontal: 3,
