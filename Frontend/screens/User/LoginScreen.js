@@ -16,6 +16,9 @@ const customColor = require("../../constants/Color");
 
 import { setErrorMessage, loginUser } from "../../redux/actions/AuthAction";
 import { useSelector, useDispatch } from "react-redux";
+import Color from "../../constants/Color";
+const COLORS = {primary: 'orange', white: '#fff', white2: '#f3f3f3', black: '#000',black2: '#505462', grey: '#f3f3f3',grey2: '#787a91'};
+
 
 const LoginScreen = ({ navigation }) => {
     // Redux data
@@ -124,17 +127,18 @@ const LoginScreen = ({ navigation }) => {
     return (
         //statusbar is top notification area 
         <View style={styles.container}>
-            <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
+            <StatusBar backgroundColor="orange" barStyle="light-content" />
             <View style={styles.header}>
                 <Text style={styles.text_header}>EasyBuy!</Text>
             </View>
             <Animatable.View animation="fadeInUpBig" style={[styles.footer]}>
                 <Text style={[styles.text_footer]}>Email</Text>
                 <View style={styles.action}>
-                    <FontAwesome name="user-o" size={20} />
+                    <FontAwesome name="user-o" color="#505462" size={20} />
                     <TextInput
+                        selectionColor= "orange"
                         placeholder="Your Email"
-                        placeholderTextColor="#666666"
+                        placeholderTextColor="#787a91"
                         style={[styles.textInput]}
                         value={email}
                         autoCapitalize="none"
@@ -143,7 +147,7 @@ const LoginScreen = ({ navigation }) => {
                     />
                     {data.check_textInputChange ? (
                         <Animatable.View animation="bounceIn">
-                            <Feather name="check-circle" color="black" size={20} />
+                            <Feather name="check-circle" color="orange" size={20} />
                         </Animatable.View>
                     ) : null}
                 </View>
@@ -155,10 +159,11 @@ const LoginScreen = ({ navigation }) => {
 
                 <Text style={[styles.text_footer]}>Password</Text>
                 <View style={styles.action}>
-                    <Feather name="lock" size={20} />
+                    <Feather name="lock" color="#505462" size={20} />
                     <TextInput
+                        selectionColor='orange'
                         placeholder="Your Password"
-                        placeholderTextColor="#666666"
+                        placeholderTextColor="#787a91"
                         secureTextEntry={data.secureTextEntry ? true : false}
                         style={[styles.textInput]}
                         autoCapitalize="none"
@@ -167,9 +172,9 @@ const LoginScreen = ({ navigation }) => {
                     />
                     <TouchableOpacity onPress={updateSecureTextEntry}>
                         {data.secureTextEntry ? (
-                            <Feather name="eye-off" color="grey" size={20} />
+                            <Feather name="eye-off" color="orange" size={20} />
                         ) : (
-                            <Feather name="eye" color="grey" size={20} />
+                            <Feather name="eye" color="orange" size={20} />
                         )}
                     </TouchableOpacity>
                 </View>
@@ -182,14 +187,14 @@ const LoginScreen = ({ navigation }) => {
                     <Text style={{ color: customColor.dark, marginTop: 15 }}>Forgot password?</Text>
                 </TouchableOpacity> */}
                 <View style={styles.button}>
-                    <TouchableOpacity onPress={handleSubmit} style={[styles.buttonContainer]}>
-                        <Text style={styles.text_footer}>Login</Text>
+                    <TouchableOpacity onPress={handleSubmit} style={[styles.loginButton]}>
+                        <Text style={styles.loginText}>Login</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         onPress={handleOnClickRegister}
-                        style={[styles.buttonContainer, { backgroundColor: customColor.light }]}
+                        style={[styles.registerButton, { backgroundColor: 'orange'}]}
                     >
-                        <Text style={styles.text_footer}>Register</Text>
+                        <Text style={styles.registerText}>Register</Text>
                     </TouchableOpacity>
                 </View>
             </Animatable.View>
@@ -203,7 +208,7 @@ export default LoginScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FF9292"
+        backgroundColor: "orange"
     },
     buttonContainer: {
         width: "100%",
@@ -212,11 +217,44 @@ const styles = StyleSheet.create({
         alignItems: "center",
         textAlign: "center",
         borderRadius: 10,
-        borderColor: customColor.dark,
-        borderWidth: 1.5
+        borderColor: 'white',
+        borderWidth: 1,
+    },
+    loginButton: {
+        width: "100%",
+        marginTop: 10,
+        padding: 15,
+        alignItems: "center",
+        textAlign: "center",
+        backgroundColor: '#f3f3f3',
+        borderRadius: 10,
+        borderColor: 'white',
+        borderWidth: 1,
+        elevation: 5
+    },
+    loginText: {
+        color: "#505462",
+        fontSize: 18,
+    },
+    registerButton: {
+        width: "100%",
+        marginTop: 10,
+        padding: 15,
+        alignItems: "center",
+        textAlign: "center",
+        backgroundColor: 'orange',
+        borderRadius: 10,
+        borderColor: 'white',
+        borderWidth: 1,
+        elevation: 4
+    },
+    registerText: {
+        color: "white",
+        fontSize: 18,
+        fontWeight: 'bold'
     },
     buttonText: {
-        color: customColor.dark,
+        color: 'red',
         fontSize: 18,
         fontWeight: "bold"
     },
@@ -232,7 +270,7 @@ const styles = StyleSheet.create({
     //login home screen form
     footer: {
         flex: 3,
-        backgroundColor: "#FFDCDC",
+        backgroundColor: "white",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         paddingHorizontal: 20,
@@ -245,31 +283,31 @@ const styles = StyleSheet.create({
     },
     //form text
     text_footer: {
-        color: "#39311D",
+        color: "#505462",
         fontSize: 18
     },
     action: {
         flexDirection: "row",
         marginTop: 10,
         borderBottomWidth: 1,
-        borderBottomColor: customColor.light,
+        borderBottomColor: 'orange',
         paddingBottom: 5
     },
     actionError: {
         flexDirection: "row",
         marginTop: 10,
         borderBottomWidth: 1,
-        borderBottomColor: "#FF0000",
+        borderBottomColor: "orange",
         paddingBottom: 5
     },
     textInput: {
         flex: 1,
         marginTop: Platform.OS === "ios" ? 0 : -12,
         paddingLeft: 10,
-        color: "#39311D"
+        color: COLORS.black2
     },
     errorMsg: {
-        color: "#FF0000",
+        color: "orange",
         fontSize: 14
     },
     successMsg: {

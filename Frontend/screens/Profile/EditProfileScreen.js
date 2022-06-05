@@ -25,7 +25,7 @@ import BottomSheet from "reanimated-bottom-sheet";
 import Animated from "react-native-reanimated";
 
 import * as ImagePicker from "expo-image-picker";
-
+const customColor = require('../../constants/Color');
 const EditProfileScreen = ({ navigation }) => {
     const [image, setImage] = useState(
         "https://drive.google.com/uc?id=18CXkz-Lqgi04iiL9jV3CtRuoYg6lb3RV"
@@ -181,7 +181,7 @@ const EditProfileScreen = ({ navigation }) => {
                 <Text style={styles.panelSubtitle}>Choose Your Profile Picture</Text>
             </View>
             <TouchableOpacity style={styles.panelButton1} onPress={takePhotoFromCamera}>
-                <Text style={styles.panelButtonTitle}>Take Photo</Text>
+                <Text style={styles.panelButtonTitle1}>Take Photo</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.panelButton2} onPress={choosePhotoFromLibrary}>
                 <Text style={styles.panelButtonTitle}>Choose From Library</Text>
@@ -401,67 +401,85 @@ const styles = StyleSheet.create({
         flex: 1
     },
     commandButton: {
+        marginTop: 40,
         padding: 15,
-        borderRadius: 10,
-        backgroundColor: "#FF9292",
         alignItems: "center",
-        marginTop: 10
+        textAlign: "center",
+        borderRadius: 10,
+        borderColor: 'white',
+        borderWidth: 1,
+        //confirm button color
+        backgroundColor: customColor.light,
+        elevation: 5
     },
     panel: {
         padding: 20,
-        backgroundColor: "#FFFFFF",
-        paddingTop: 20
+        // backgroundColor: "#FFFFFF",
+        backgroundColor: customColor.white2,
+        paddingTop: 8
     },
     header: {
-        backgroundColor: "#FFFFFF",
-        shadowColor: "#333333",
+        backgroundColor: customColor.white2,
+        shadowColor: customColor.black,
         shadowOffset: { width: -1, height: -3 },
         shadowRadius: 2,
-        shadowOpacity: 0.4,
+        shadowOpacity: 0.5,
         paddingTop: 20,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
     },
     panelHeader: {
         alignItems: "center"
     },
     panelHandle: {
         width: 40,
-        height: 8,
+        height: 7,
         borderRadius: 4,
         backgroundColor: "#00000040",
         marginBottom: 10
     },
     panelTitle: {
-        fontSize: 27,
-        height: 40
+        fontSize: 24,
+        height: 40,
+        color: customColor.black2
     },
     panelSubtitle: {
         fontSize: 14,
-        color: "gray",
+        color: customColor.grey2,
         height: 30,
         marginBottom: 10
     },
     panelButton1: {
         padding: 13,
         borderRadius: 10,
-        backgroundColor: "#FF9292",
+        borderColor: 'white',
+        backgroundColor: customColor.white,
         alignItems: "center",
-        marginVertical: 7
+        marginVertical: 7,
+        elevation: 4
+    },
+    panelButtonTitle1: {
+        fontSize: 17,
+        // fontWeight: "bold",
+        color: customColor.black2
     },
     panelButton2: {
         padding: 13,
         borderRadius: 10,
-        backgroundColor: "#FFB4B4",
+        borderColor: 'white',
+        backgroundColor: customColor.grey2,
         alignItems: "center",
-        marginVertical: 7
+        marginVertical: 7,
+        elevation: 5
     },
     panelButton3: {
         padding: 13,
+        borderColor: 'white',
         borderRadius: 10,
-        backgroundColor: "#FFCCCC",
+        backgroundColor: customColor.black2,
         alignItems: "center",
-        marginVertical: 7
+        marginVertical: 7,
+        elevation: 6
     },
     panelButtonTitle: {
         fontSize: 17,

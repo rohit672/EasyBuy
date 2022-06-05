@@ -74,7 +74,7 @@ const OnboardingScreen = () => {
           marginRight: w * 0.7,
           marginBottom: h * 0.02,
         }}
-        activeDotColor="#8A56AC"
+        activeDotColor="orange"
         dotColor="#998FA2"
         nextButton={
           <View

@@ -24,10 +24,12 @@ const Banner = () => {
             <View style={styles.container}>
                 <View style={styles.swiper}>
                     <Swiper
-                        style={{ height: width / 2 }}
+                        style={{ height: width / 2 ,}}
                         showButtons={false}
                         autoplay={true}
                         autoplayTimeout={3}
+                        activeDotColor= "orange"
+                        dotColor="white"
                     >
                         {bannerData.map((item) => {
                             return (

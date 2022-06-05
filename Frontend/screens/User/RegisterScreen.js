@@ -20,7 +20,9 @@ import { Item, Picker, Icon } from "native-base";
 import { useSelector, useDispatch } from "react-redux";
 import { setErrorMessage, registerUser } from "../../redux/actions/AuthAction";
 import MESSAGES from "../../constants/Messages";
+import Color from "../../constants/Color";
 const customColor = require("../../constants/Color");
+const COLORS = {primary: 'orange', white: '#fff', white2: '#f3f3f3', black: '#000',black2: '#505462', grey: '#f3f3f3',grey2: '#787a91'};
 
 const RegisterScreen = ({ navigation }) => {
     const error_message = useSelector((state) => state.error_message);
@@ -180,7 +182,7 @@ const RegisterScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             {/* status bar is top notification area */}
-            <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
+            <StatusBar backgroundColor = 'orange' barStyle="light-content" />
             <View style={styles.header}>
                 <Text style={styles.text_header}>Register Now!</Text>
             </View>
@@ -190,9 +192,10 @@ const RegisterScreen = ({ navigation }) => {
                     {/* NAME */}
                     <Text style={[styles.text_footer]}>Name</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="drive-file-rename-outline" color="#39311D" size={20} />
+                        <MaterialIcons name="drive-file-rename-outline" color="#505462" size={20} />
                         <TextInput
                             placeholder="Full Name"
+                            placeholderTextColor="#787a91"
                             style={styles.textInput}
                             autoCapitalize="none"
                             onChangeText={(val) => nameChangeHandler(val)}
@@ -202,16 +205,17 @@ const RegisterScreen = ({ navigation }) => {
                     {/* CONTACT */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Contact</Text>
                     <View style={styles.action}>
-                        <FontAwesome name="phone" color="#39311D" size={20} />
+                        <FontAwesome name="phone" color="#505462" size={20} />
                         <TextInput
                             placeholder="Contact Number"
+                            placeholderTextColor="#787a91"
                             style={styles.textInput}
                             autoCapitalize="none"
                             onChangeText={(val) => phoneChangeHandler(val)}
                         />
                         {data.check_contactNumber ? (
                             <Animatable.View animation="bounceIn">
-                                <Feather name="check-circle" color="black" size={20} />
+                                <Feather name="check-circle" color="orange" size={20} />
                             </Animatable.View>
                         ) : null}
                     </View>
@@ -219,8 +223,9 @@ const RegisterScreen = ({ navigation }) => {
                     {/* EMAIL */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Email</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="alternate-email" color="#39311D" size={20} />
+                        <MaterialIcons name="alternate-email" color="#505462" size={20} />
                         <TextInput
+                            placeholderTextColor="#787a91"
                             placeholder="Your Email"
                             style={styles.textInput}
                             autoCapitalize="none"
@@ -228,7 +233,7 @@ const RegisterScreen = ({ navigation }) => {
                         />
                         {data.check_textInputChange ? (
                             <Animatable.View animation="bounceIn">
-                                <Feather name="check-circle" color="black" size={20} />
+                                <Feather name="check-circle" color="orange" size={20} />
                             </Animatable.View>
                         ) : null}
                     </View>
@@ -241,15 +246,16 @@ const RegisterScreen = ({ navigation }) => {
                                 mode="dropdown"
                                 iosIcon={<Icon name="arrow-down" />}
                                 style={{ width: "100%", height: 20 }}
+                                placeholderTextColor="#787a91"
                                 placeholder="Select User Type"
                                 selectedValue={usertype}
                                 onValueChange={(type) => {
                                     selectUserTypeHandler(type);
                                 }}
                             >
-                                <Picker.Item label="Select..." value="0" />
-                                <Picker.Item label="General User" value="user" />
-                                <Picker.Item label="Vendor" value="vendor" />
+                                <Picker.Item label="Select..." color="#787a91" value="0" />
+                                <Picker.Item label="General User" color="#787a91" value="user" />
+                                <Picker.Item label="Vendor" color="#787a91" value="vendor" />
                             </Picker>
                         </Item>
                     </View>
@@ -259,9 +265,10 @@ const RegisterScreen = ({ navigation }) => {
                     {/* City */}
                     <Text style={[styles.text_footer]}>City</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="drive-file-rename-outline" color="#39311D" size={20} />
+                        <MaterialIcons name="drive-file-rename-outline" color="#505462" size={20} />
                         <TextInput
-                            placeholder="City..."
+                            placeholderTextColor="#787a91"
+                            placeholder="City Name"
                             style={styles.textInput}
                             autoCapitalize="none"
                             onChangeText={(val) => cityChangeHandler(val)}
@@ -271,9 +278,10 @@ const RegisterScreen = ({ navigation }) => {
                     {/* Locality */}
                     <Text style={[styles.text_footer]}>Locality</Text>
                     <View style={styles.action}>
-                        <MaterialIcons name="drive-file-rename-outline" color="#39311D" size={20} />
+                        <MaterialIcons name="drive-file-rename-outline" color="#505462" size={20} />
                         <TextInput
                             placeholder="Locality"
+                            placeholderTextColor="#787a91"
                             style={styles.textInput}
                             autoCapitalize="none"
                             onChangeText={(val) => localityChangeHandler(val)}
@@ -283,9 +291,10 @@ const RegisterScreen = ({ navigation }) => {
                     {/* PASSWORD */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Password</Text>
                     <View style={styles.action}>
-                        <Feather name="lock" color="#39311D" size={20} />
+                        <Feather name="lock" color="#505462" size={20} />
                         <TextInput
                             placeholder="Your Password"
+                            placeholderTextColor="#787a91"
                             secureTextEntry={data.secureTextEntry ? true : false}
                             style={styles.textInput}
                             autoCapitalize="none"
@@ -293,9 +302,9 @@ const RegisterScreen = ({ navigation }) => {
                         />
                         <TouchableOpacity onPress={updateSecureTextEntry}>
                             {data.secureTextEntry ? (
-                                <Feather name="eye-off" color="grey" size={20} />
+                                <Feather name="eye-off" color='orange' size={20} />
                             ) : (
-                                <Feather name="eye" color="grey" size={20} />
+                                <Feather name="eye" color="orange" size={20} />
                             )}
                         </TouchableOpacity>
                     </View>
@@ -303,9 +312,10 @@ const RegisterScreen = ({ navigation }) => {
                     {/* CONFIRM PASSWORD */}
                     <Text style={[styles.text_footer, { marginTop: 10 }]}>Confirm Password</Text>
                     <View style={styles.action}>
-                        <Feather name="lock" color="#39311D" size={20} />
+                        <Feather name="lock" color="#505462" size={20} />
                         <TextInput
                             placeholder="Confirm Your Password"
+                            placeholderTextColor="#787a91"
                             secureTextEntry={data.confirm_secureTextEntry ? true : false}
                             style={styles.textInput}
                             autoCapitalize="none"
@@ -313,27 +323,27 @@ const RegisterScreen = ({ navigation }) => {
                         />
                         <TouchableOpacity onPress={updateConfirmSecureTextEntry}>
                             {data.secureTextEntry ? (
-                                <Feather name="eye-off" color="grey" size={20} />
+                                <Feather name="eye-off" color="orange" size={20} />
                             ) : (
-                                <Feather name="eye" color="grey" size={20} />
+                                <Feather name="eye" color="orange" size={20} />
                             )}
                         </TouchableOpacity>
                     </View>
 
                     {/* BUTTON_GRP */}
                     <View style={styles.button}>
-                        <TouchableOpacity onPress={handleRegister} style={[styles.buttonContainer]}>
-                            <Text style={styles.buttonText}>Register</Text>
+                        <TouchableOpacity onPress={handleRegister} style={[styles.registerButton]}>
+                            <Text style={styles.registerText}>Submit</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             onPress={() => navigation.goBack()}
                             style={[
-                                styles.buttonContainer,
-                                { marginTop: 15, backgroundColor: customColor.light }
+                                styles.loginButton,
+                                { marginTop: 15, marginBottom: 20, backgroundColor: COLORS.primary }
                             ]}
                         >
-                            <Text style={styles.buttonText}>Log In</Text>
+                            <Text style={styles.loginText}>Login</Text>
                         </TouchableOpacity>
                     </View>
                 </ScrollView>
@@ -347,7 +357,7 @@ export default RegisterScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FF9292"
+        backgroundColor: COLORS.primary
     },
     buttonContainer: {
         width: "100%",
@@ -357,6 +367,39 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderColor: "#FF9292",
         borderWidth: 1.5
+    },
+    registerButton: {
+        width: "100%",
+        marginTop: 10,
+        padding: 15,
+        alignItems: "center",
+        textAlign: "center",
+        backgroundColor: '#f3f3f3',
+        borderRadius: 10,
+        borderColor: 'white',
+        borderWidth: 1,
+        elevation: 5
+    },
+    registerText: {
+        color: "#505462",
+        fontSize: 18,
+    },
+    loginButton: {
+        width: "100%",
+        marginTop: 10,
+        padding: 15,
+        alignItems: "center",
+        textAlign: "center",
+        backgroundColor: 'orange',
+        borderRadius: 10,
+        borderColor: 'white',
+        borderWidth: 1,
+        elevation: 4
+    },
+    loginText: {
+        color: "white",
+        fontSize: 18,
+        fontWeight: 'bold'
     },
     buttonText: {
         color: customColor.dark,
@@ -374,43 +417,43 @@ const styles = StyleSheet.create({
     },
     footer: {
         flex: 3,
-        backgroundColor: "#FFDCDC",
+        backgroundColor: COLORS.white,
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         paddingHorizontal: 20,
         paddingVertical: 30
     },
     text_header: {
-        color: "#fff",
+        color: COLORS.white ,
         fontWeight: "bold",
         fontSize: 30
     },
     text_footer: {
-        color: "#39311D",
+        color: "#505462",
         fontSize: 18
     },
     action: {
         flexDirection: "row",
         marginTop: 10,
         borderBottomWidth: 1,
-        borderBottomColor: customColor.light,
+        borderBottomColor: COLORS.primary,
         paddingBottom: 5
     },
     actionError: {
         flexDirection: "row",
         marginTop: 10,
         borderBottomWidth: 1,
-        borderBottomColor: "#FF0000",
+        borderBottomColor: COLORS.primary,
         paddingBottom: 5
     },
     textInput: {
         flex: 1,
         marginTop: Platform.OS === "ios" ? 0 : -12,
         paddingLeft: 10,
-        color: "#39311D"
+        color: COLORS.black2
     },
     errorMsg: {
-        color: "#FF0000",
+        color: "orange",
         fontSize: 14
     },
     successMsg: {
