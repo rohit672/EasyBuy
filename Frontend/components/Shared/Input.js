@@ -21,6 +21,7 @@ const Input = (props) => {
 
     return (
         <TextInput
+            selectionColor={'orange'}
             style={[styles.input, { height: height }]}
             placeholder={placeholder}
             name={name}
@@ -40,13 +41,13 @@ const Input = (props) => {
 const styles = StyleSheet.create({
     input: {
         width: "85%",
-        backgroundColor: "white",
+        backgroundColor: customColor.white2,
         margin: 10,
         marginTop: 5,
         borderRadius: 5,
         padding: 10,
         borderWidth: 2,
-        borderColor: customColor.medium
+        borderColor: customColor.grey
     }
 });
 

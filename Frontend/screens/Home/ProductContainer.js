@@ -27,6 +27,7 @@ import { REST_API_URL } from "../../constants/URLs";
 import axios from "axios";
 
 const { height } = Dimensions.get("window");
+const customColor = require('../../constants/Color');
 
 const ProductContainer = (props) => {
     const [products, setProducts] = useState([]);
@@ -200,7 +201,7 @@ const ProductContainer = (props) => {
     return isLoading == true ? (
         <SafeAreaView>
             <View style={{ alignSelf: "center", marginTop: height / 3 }}>
-                <ActivityIndicator style={{ margin: 10 }} size="large" color="#FF9292" />
+                <ActivityIndicator style={{ margin: 10 }} size="large" color = 'orange' />
                 <Text note>Loading Products...</Text>
             </View>
         </SafeAreaView>

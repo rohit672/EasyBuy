@@ -93,7 +93,7 @@ export default function UserDetail(props) {
 
     return (
         <ScrollView>
-            <StatusBar backgroundColor="#FF9292" barStyle="light-content" />
+            <StatusBar backgroundColor="orange" barStyle="light-content" />
             <Header style={{ backgroundColor: "#fff" }}>
                 <Left>
                     <Button transparent onPress={() => props.navigation.navigate("Profile")}>
@@ -173,7 +173,7 @@ export default function UserDetail(props) {
             {isLoading ? (
                 <SafeAreaView>
                     <View style={{ alignSelf: "center", marginTop: 50 }}>
-                        <ActivityIndicator style={{ margin: 10 }} size="large" color="#FF9292" />
+                        <ActivityIndicator style={{ margin: 10 }} size="large" color="orange" />
                         <Text note>Loading Products...</Text>
                     </View>
                 </SafeAreaView>
@@ -208,7 +208,7 @@ export default function UserDetail(props) {
                         </SafeAreaView>
 
                     ) : (
-                        <View style={[styles.center, { height: height / 2 }]}>
+                        <View style={styles.center}>
                             <Text style={styles.txt}>No Products Found</Text>
                         </View>
                     )}
@@ -220,6 +220,11 @@ export default function UserDetail(props) {
 }
 
 const styles = StyleSheet.create({
+    center: {
+        backgroundColor: "#E8E8E8",
+        height: 2*height/2.4
+    },
+
     topcontainer: {
         backgroundColor: "gainsboro"
     },
@@ -228,8 +233,8 @@ const styles = StyleSheet.create({
         backgroundColor: "#E8E8E8"
     },
     txt :{
-        marginTop: 120,
-        marginLeft: 120,
+        marginTop: height/3,
+        marginLeft: width/3.5,
         justifyContent: "center"
     },
     card: {
@@ -268,7 +273,7 @@ const styles = StyleSheet.create({
     },
 
     iconStyle: {
-        color: colors.dark,
+        color: "orange",
         textAlign: "center",
         width: 50,
         shadowOpacity: 2,
