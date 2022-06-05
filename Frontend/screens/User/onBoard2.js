@@ -183,7 +183,7 @@ const OnBoard2 = ({navigation}) => {
       <FlatList
         ref={ref}
         onMomentumScrollEnd={updateCurrentSlideIndex}
-        contentContainerStyle={{height: height * 0.75}}
+        contentContainerStyle={{height: height * 0.74}}
         showsHorizontalScrollIndicator={false}
         horizontal
         data={slides}
