@@ -121,7 +121,7 @@ export default function ListOfUsers({ navigation }) {
                 <SafeAreaView>
                     <View style={{ alignSelf: "center", marginTop: height / 3 }}>
                         {/* change the color of loading bar in the vendors list */}
-                        <ActivityIndicator style={{ margin: 10 }} size="large" color="#FF9292" />
+                        <ActivityIndicator style={{ margin: 10 }} size="large" color="orange" />
                         <Text note>Loading Vendors....</Text>
                     </View>
                 </SafeAreaView>

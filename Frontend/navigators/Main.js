@@ -4,6 +4,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/FontAwesome";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { MaterialIcons } from '@expo/vector-icons';
+import { Octicons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 // Stacks
 import HomeNavigator from "./HomeNavigator";
 import AddProductNavigator from "./AddProductNavigator";
@@ -57,7 +61,18 @@ export default function Main() {
                     component={AddProductNavigator}
                     options={{
                         tabBarIcon: ({ color }) => (
-                            <Icon name="plus-circle" color={color} size={30} />
+                            // <Icon name="plus-circle" color={color} size={30} />
+                            // <MaterialIcons name="add-to-photos" size={30} color={color} />
+                            // <MaterialIcons name="playlist-add" size={30} color={color} />
+                            // <MaterialIcons name="post-add" size={30} color={color} />
+                            // <MaterialIcons name="addchart" size={30} color="black" />
+                            // <MaterialIcons name="add-circle-outline" size={30} color="black" />
+                            <AntDesign name="addfolder" size={24} color={color} />
+                            // <MaterialIcons name="shape-square-rounded-plus" size={24} color="black" />
+                            // <Feather name="folder-plus" size={25} color={color} />
+                            // <AntDesign name="plussquareo" size={24} color="black" />
+                            // <AntDesign name="addfile" size={24} color={color} />
+                            
                         )
                     }}
                 />

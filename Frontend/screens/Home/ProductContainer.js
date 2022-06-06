@@ -200,7 +200,7 @@ const ProductContainer = (props) => {
 
     return isLoading == true ? (
         <SafeAreaView>
-            <View style={{ alignSelf: "center", marginTop: height / 3 }}>
+            <View style={{ alignSelf: "center", marginTop: 2*height/5 }}>
                 <ActivityIndicator style={{ margin: 10 }} size="large" color = 'orange' />
                 <Text note>Loading Products...</Text>
             </View>
@@ -215,7 +215,7 @@ const ProductContainer = (props) => {
                 opacity={0.8}
             >
                 <Header searchBar rounded style={{ backgroundColor: "#F8F8F8", elevation: 10 }}>
-                    <Item style={{ backgroundColor: "#E8E8E8", borderRadius: 20 }}>
+                    <Item style={{ backgroundColor: "#E8E8E8", }}>
 
                         {/* Theme changer menu drawer */}
                         {/* <Icon name="ios-menu" onPress={toggleOpen} /> */}
@@ -289,7 +289,7 @@ const styles = StyleSheet.create({
         alignItems: "flex-start",
         flexWrap: "wrap",
         backgroundColor: "gainsboro",
-        marginBottom: 50
+        marginBottom: 50,
     },
     animatedBox: {
         flex: 1,

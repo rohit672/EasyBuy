@@ -180,8 +180,8 @@ export default function UserDetail(props) {
             </SafeAreaView>
             {isLoading ? (
                 <SafeAreaView>
-                    <View style={{ alignSelf: "center", marginTop: 50 }}>
-                        <ActivityIndicator style={{ margin: 10 }} size="large" color="#FF9292" />
+                    <View style={{ alignSelf: "center", marginTop: 1/2*height/3 }}>
+                        <ActivityIndicator style={{ margin: 10 }} size="large" color="orange" />
                         <Text note>Loading Products...</Text>
                     </View>
                 </SafeAreaView>
