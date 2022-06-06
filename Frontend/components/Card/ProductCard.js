@@ -17,7 +17,7 @@ export default function ProductCard(props) {
                 }}
             >
                 <CardItem
-                    style={{ backgroundColor: themeContext[themeContext.current_theme].background }}
+                    style={{ backgroundColor: themeContext[themeContext.current_theme].background, }}
                 >
                     <Body>
                         {/* truncate the product name in the home screen  */}
@@ -40,7 +40,7 @@ export default function ProductCard(props) {
                 <CardItem cardBody>
                     <Image
                         source={{ uri: imageUrl }}
-                        style={{ height: height / 4, width: null, flex: 1 }}
+                        style={{ height: height / 4, width: null, flex: 1,}}
                     />
                 </CardItem>
                 <CardItem
@@ -87,6 +87,6 @@ export default function ProductCard(props) {
 const styles = StyleSheet.create({
     container: {
         height: (3 * height) / 4 - 50,
-        backgroundColor: "gainsboro"
+        backgroundColor: "gainsboro",
     }
 });

@@ -231,9 +231,10 @@ export default function ProductForm(props) {
                         </TouchableOpacity>
                     </View>
                     <View style={[styles.label, { marginTop: 20 }]}>
-                        <Text>Name of the Product</Text>
+                        <Text style={styles.textForm}>Name of the Product</Text>
                     </View>
                     <Input
+                        style={styles.textInput}
                         placeholder="Name"
                         name="name"
                         id="name"
@@ -241,7 +242,7 @@ export default function ProductForm(props) {
                         onChangeText={(text) => setName(text)}
                     />
                     <View style={styles.label}>
-                        <Text>Price (INR)</Text>
+                        <Text style={styles.textForm}>Price (INR)</Text>
                     </View>
                     <Input
                         placeholder="Price"
@@ -253,7 +254,7 @@ export default function ProductForm(props) {
                     />
 
                     <View style={styles.label}>
-                        <Text>Description (Short Desc)</Text>
+                        <Text style={styles.textForm}>Description (Short Desc)</Text>
                     </View>
                     <Input
                         placeholder="Description (50 words)"
@@ -266,10 +267,11 @@ export default function ProductForm(props) {
                     />
 
                     <View style={styles.label}>
-                        <Text>Select Category Of The Product </Text>
+                        <Text style={styles.textForm}>Select Category Of The Product </Text>
                     </View>
                     <Item picker style={{ width: "80%" }}>
                         <Picker
+                            // style={styles.textForm}
                             mode="dropdown"
                             iosIcon={<Icon color={"#F2789F"} name="arrow-down" />}
                             placeholder="Select your Category"
@@ -280,7 +282,7 @@ export default function ProductForm(props) {
                         >
         
                             {categories.map((c) => {
-                                return <Picker.Item key={c._id} label={c.name} value={c.name} />;
+                                return <Picker.Item style={styles.textForm} key={c._id} label={c.name} value={c.name} />;
                             })}
               
                         </Picker>
@@ -326,6 +328,9 @@ const styles = StyleSheet.create({
         width: "80%",
         marginTop: 10
     },
+    textForm: {
+        color: "#505462",
+    },
     confirmButton: {
         width: "85%",
         marginTop: 10,
@@ -364,7 +369,7 @@ const styles = StyleSheet.create({
         width: 300,
         height: 200,
         borderStyle: "solid",
-        borderWidth: 2,
+        borderWidth: 1,
         padding: 0,
         justifyContent: "center",
         borderRadius: 10,
@@ -380,7 +385,7 @@ const styles = StyleSheet.create({
         position: "absolute",
         right: 5,
         bottom: 5,
-        backgroundColor: customColor.dark,
+        backgroundColor: customColor.light,
         padding: 8,
         borderRadius: 100,
         elevation: 20
@@ -471,14 +476,14 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: 10,
         borderBottomWidth: 1,
-        borderBottomColor: "#f2f2f2",
+        borderBottomColor: "orange",
         paddingBottom: 5
     },
     actionError: {
         flexDirection: "row",
         marginTop: 10,
         borderBottomWidth: 1,
-        borderBottomColor: "#FF0000",
+        borderBottomColor: "orange",
         paddingBottom: 5
     }
 });

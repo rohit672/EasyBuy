@@ -15,7 +15,7 @@ export default function SimilarProducts(props) {
                     style={[styles.listItemStyle, { marginTop: 0 }]}
                     containerStyle={{ borderRadius: 10 }}
                 >
-                    <ListItem.Subtitle style={{ fontSize: 10 }}>Name :</ListItem.Subtitle>
+                    <ListItem.Subtitle numberOfLines={1} style={{ fontSize: 10 }}>Name :</ListItem.Subtitle>
                     <ListItem.Title>{similarProducts.name}</ListItem.Title>
                 </ListItem>
 

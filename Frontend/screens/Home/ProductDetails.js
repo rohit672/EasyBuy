@@ -129,10 +129,11 @@ export default function ProductDetails(props) {
             similarProductsData.push(
                 <ListItem
                     containerStyle={{
-                        borderRadius: 20,
+                        borderRadius: 15,
                         width: width / 1.5,
                         marginRight: 10,
-                        elevation: 5
+                        elevation: 5,
+                        borderColor: "white"
                     }}
                     key={item._id}
                     onPress={() => {
@@ -145,8 +146,8 @@ export default function ProductDetails(props) {
                 >
                     <Avatar size={70} source={{ uri: item.imageUrl }} />
                     <ListItem.Content>
-                        <ListItem.Title style={{ fontWeight: "bold" }}>{item.name}</ListItem.Title>
-                        <ListItem.Subtitle>
+                        <ListItem.Title numberOfLines={1} style={{ fontWeight: "bold" }}>{item.name}</ListItem.Title>
+                        <ListItem.Subtitle numberOfLines={1}>
                             {item.description.substring(0, Math.min(item.description.length, 15))}
                             ...
                         </ListItem.Subtitle>
@@ -157,7 +158,7 @@ export default function ProductDetails(props) {
                                 ₹ {item.cost}
                             </ListItem.Subtitle>
                         </ListItem.Subtitle>
-                        <StarRating ratings={4} reviews={250} />
+                        <StarRating ratings={4} reviews={100} />
                     </ListItem.Content>
                 </ListItem>
             );
@@ -169,7 +170,7 @@ export default function ProductDetails(props) {
             vendorProductData.push(
                 <ListItem
                     containerStyle={{
-                        borderRadius: 20,
+                        borderRadius: 15,
                         width: width / 1.5,
                         marginRight: 10,
                         elevation: 5
@@ -185,8 +186,8 @@ export default function ProductDetails(props) {
                 >
                     <Avatar size={70} source={{ uri: item.imageUrl }} />
                     <ListItem.Content>
-                        <ListItem.Title style={{ fontWeight: "bold" }}>{item.name}</ListItem.Title>
-                        <ListItem.Subtitle>
+                        <ListItem.Title numberOfLines={1} style={{ fontWeight: "bold" }}>{item.name}</ListItem.Title>
+                        <ListItem.Subtitle numberOfLines={1} >
                             {item.description.substring(0, Math.min(item.description.length, 15))}
                             ...
                         </ListItem.Subtitle>
@@ -300,7 +301,7 @@ export default function ProductDetails(props) {
                     style={{ backgroundColor: "#f2f2f2", padding: 10 }}
                 >
                     {similarProducts.length > 0 && (
-                        <View style={{ flex: 1, flexDirection: "row" }}>
+                        <View style={{ flex: 1, flexDirection: "row", marginBottom: 10 }}>
                             {similarProductsData.map((image) => {
                                 return image;
                             })}
@@ -314,12 +315,12 @@ export default function ProductDetails(props) {
                     styles.card,
                     {
                         backgroundColor: "#fff",
-                        marginTop: 10,
+                        marginTop: 0,
                         height: 200
                     }
                 ]}
             >
-                <Text note style={{ margin: 20 }}>
+                <Text note style={{ margin: 20, }}>
                     More from this vendor{" "}
                 </Text>
                 <ScrollView
@@ -330,7 +331,7 @@ export default function ProductDetails(props) {
                     style={{ backgroundColor: "#f2f2f2", padding: 10 }}
                 >
                     {vendorProducts.length > 0 && (
-                        <View style={{ flex: 1, flexDirection: "row" }}>
+                        <View style={{ flex: 1, flexDirection: "row",marginBottom: 10 }}>
                             {vendorProductData.map((image) => {
                                 return image;
                             })}
