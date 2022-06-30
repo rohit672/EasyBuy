@@ -15,7 +15,7 @@ There are 2 different types of Users who can register in the app . 
 
 There is another type of user , ADMIN . 
 
-**ADMIN** -> It is responsible for maintaining the application , montinoring the products sold . ADMIN can delete or suspend any user if anything thing is reported against them .     
+**ADMIN** -> It is responsible for maintaining the application , monitoring the products sold , handling customer queries etc. ADMIN can delete or suspend any user if anything thing is reported against them .     
 
 ## App Features 
 
