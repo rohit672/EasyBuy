@@ -30,8 +30,17 @@ There is another type of user , ADMIN . 
 
 ## Application Preview 
 
-Here is a sneek peek of the application .
+### Here is a sneek peek of the application .
 
+### *Login and Registration screen . Type of user should be mentioned at the time of registration.*
+
+### *Home screen shows all the available products and their details . User can filter them category wise.* 
+
+### *Vendors can upload any product under its respective cateogry. * 
+
+### *Users can see all the registered vendors and can also search some specific vendors on the basic of Location , Phone No. , Name etc.*
+
+### *General users and vendors have different profile screens . Users can update their details like Profile Photo , Phone No. Location.*
 
 
 
