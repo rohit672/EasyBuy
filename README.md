@@ -34,14 +34,23 @@ There is another type of user , ADMIN . 
 
 ### *Login and Registration screen . Type of user should be mentioned at the time of registration.*
 
+![](https://github.com/rohit672/EasyBuy/blob/main/Preview/login2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/regis2.jpg)
+
 ### *Home screen shows all the available products and their details . User can filter them category wise.* 
+
+![](https://github.com/rohit672/EasyBuy/blob/main/Preview/home2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/productdetail.jpg)
 
 ### *Vendors can upload any product under its respective cateogry. * 
 
+![](https://github.com/rohit672/EasyBuy/blob/main/Preview/product2.jpg)    ![]()
+
 ### *Users can see all the registered vendors and can also search some specific vendors on the basic of Location , Phone No. , Name etc.*
+
+![](https://github.com/rohit672/EasyBuy/blob/main/Preview/vendors2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/vendordetail2.jpg)
 
 ### *General users and vendors have different profile screens . Users can update their details like Profile Photo , Phone No. Location.*
 
+![](https://github.com/rohit672/EasyBuy/blob/main/Preview/userprofile2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/vendorprofile2.jpg)
 
 
 ## Technology  Stack 
