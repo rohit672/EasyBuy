@@ -2,6 +2,7 @@ const express = require("express");
 const controller = require("../controllers/vendor");
 const router = express.Router();
 const multer = require("multer");
+const middle = require("../middlewares/middle");
 
 const FILE_TYPE_MAP = {
     "image/png": "png",
