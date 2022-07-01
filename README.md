@@ -30,8 +30,10 @@ There is another type of user , ADMIN . 
 
 ## Application Preview 
 
-###  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; Here is a sneek peek of the application .
+###  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  Here is a sneek peek of the application .
 
+ &nbsp;
+ 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard1.jpg" width="300" height="600" />
@@ -40,30 +42,35 @@ There is another type of user , ADMIN . 
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard3.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/login.jpg" width="300" height="600"/>
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/register.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/selectUser.jpg" width="300" height="600"/>
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/home1.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/home2.jpg" width="300" height="600"/>
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/product2.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/moreProduct2.jpg" width="300" height="600"/>
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/searchProduct1.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/seacrchProduct2.jpg" width="300" height="600"/>
@@ -71,24 +78,28 @@ There is another type of user , ADMIN . 
 
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/searchVendor.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorProducts.jpg" width="300" height="600"/>
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/createProduct.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/uploadProduct.jpg" width="300" height="600"/>
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorprofile.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/yourProducts.jpg" width="300" height="600"/>
 </p>
 
 <p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/editProducts.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/editProfile.jpg" width="300" height="600"/>
