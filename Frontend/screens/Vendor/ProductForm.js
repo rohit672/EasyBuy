@@ -367,7 +367,7 @@ const styles = StyleSheet.create({
     },
     imageContainer: {
         width: 300,
-        height: 200,
+        height: 180,
         borderStyle: "solid",
         borderWidth: 1,
         padding: 0,
