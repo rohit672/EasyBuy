@@ -1,34 +1,34 @@
 # EasyBuy 
 
-EasyBuy is a mobile application which allow users to connect with different vendors and doorstep sellers . Here , multiple vendors register their products for a negotiable price , users then filter some vendors according to its locailty and compare mulitple prices for similar products and contacts the vendor with the best selling price .
+EasyBuy is a mobile application which allow users to connect with different vendors and doorstep sellers . Here , multiple vendors can register their products for a negotiable price, customers can filter some vendors according to their locailty and compare mulitple prices for similar products and contact the vendor with the best selling price.
 
-The project is based upon Client-Server architecture, where the server and the database are hosted separately and the client communicates via REST APIs.
+The application is based upon Client-Server architecture, where the server and the database are hosted separately and the client communicates via REST APIs.
 
 ## User Types 
 
 There are 2 different types of Users who can register in the app .
 
-1. **General User / Customer** -> These type of users can see all the vendors and their products of different categories and can filter them on the basis of location and price .
+1. **General User / Customer** -> These users are the buyers. They can see all the vendors and their products belonging to different categories and can filter products using various parameters to get the best deal for them.
 
-2. **Vendors** -> These types of users sell their products on this platform . They register products , available to them for sale , with the respective product category . They then negotiate with the customer to get maximum value .
+2. **Vendors** -> These users are the sellers. They register their products, under the respective product category. They negotiate with the customer to get maximum profit .
 
 There is another type of user , ADMIN .
 
-**ADMIN** -> It is responsible for maintaining the application , monitoring the products sold , handling customer queries etc. ADMIN can delete or suspend any user if anything thing is reported against them .
+**ADMIN** -> It is responsible for maintaining the application, monitoring the products sold, handling customer queries etc. ADMIN can delete or suspend any user if anything thing is reported against them.
 
 ## App Features 
 
 1. It is a cross platform mobile application i.e. it can run on both android and iOS systems .
 
-2. Smooth and Easy to use UI ( user interface )
+2. Smooth and Easy to use UI (user interface). Anyone can use the application.
 
-3. Application is completely secure .
+3. Application is completely secure.
 
 ## Application Preview 
 
 ### Here is a sneek peek of the Application.
 
-### _Login and Register Screen. User type (General User/Vendor),should be mentioned at the time of Registration._
+### *Login and Register Screen. User type (General User/Vendor),should be mentioned at the time of Registration.*
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
