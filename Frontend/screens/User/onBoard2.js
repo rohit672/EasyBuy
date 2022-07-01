@@ -18,19 +18,19 @@ const COLORS = {primary: '#282534', white: '#fff', white2: '#f3f3f3', black: '#0
 const slides = [
   {
     id: '1',
-    image: require('./images/img4.png'),
+    image: require('./images/img1.png'),
     title: 'Discover',
     subtitle: 'Get Anything Anywhere !!',
   },
   {
     id: '2',
-    image: require('./images/img3.png'),
+    image: require('./images/img2.png'),
     title: 'Shop',
     subtitle: 'Contact With Trusted Vendors ',
   },
   {
     id: '3',
-    image: require('./images/img6.png'),
+    image: require('./images/img3.png'),
     title: 'Negotiate',
     subtitle: 'Grab The Best Deals For You !!',
   },
