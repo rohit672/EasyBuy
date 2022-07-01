@@ -28,7 +28,7 @@ There is another type of user , ADMIN .
 
 ### Here is a sneek peek of the Application.
 
-### *Login and Register Screen. User type (General User/Vendor),should be mentioned at the time of Registration.*
+### _Login and Register Screen. User type (General User/Vendor),should be mentioned at the time of Registration._
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -37,8 +37,9 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/register.jpg" width="300" height="600"/>
 </p>
 
-### *Home screen displays all the available products.*
-### *Customers can filter products on the basis of categories and can see specific product details.*
+### _Home screen displays all the available products._
+
+### _Customers can filter products on the basis of categories and can see specific product details._
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -47,16 +48,18 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/product2.jpg" width="300" height="600" />
 </p>
 
-### *Vendors can upload new products under their respective categories.* 
+### _Vendors can upload new products under their respective categories._
+
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
-  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/createProduct.jpg" width="300" height="600" />
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/uploadProduct.jpg" width="300" height="600" />
   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
-  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorProducts.jpg" width="300" height="600"/>
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/createProduct.jpg" width="300" height="600"/>
 </p>
 
-### *Users can see details of all the registered vendors.* 
-### *Also, they can search some vendors on the basis of Location, Phone. No., Name etc.* 
+### _Users can see details of all the registered vendors._
+
+### _Also, they can search some vendors on the basis of Location, Phone. No., Name etc._
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -65,7 +68,7 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorProducts.jpg" width="300" height="600"/>
 </p>
 
-### *General users and vendors have different profile screens. Users can update they personal details.*
+### _General users and vendors have different profile screens. Users can update they personal details._
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
