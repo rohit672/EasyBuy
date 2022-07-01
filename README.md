@@ -28,7 +28,7 @@ There is another type of user , ADMIN .
 
 ### Here is a sneek peek of the Application.
 
-### *Login and Register Screen. User type (General User/Vendor),should be mentioned at the time of Registration.*
+### *Login and Register Screen. User type(General User/Vendor),should be mentioned at the time of Registration.*
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -37,9 +37,9 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/register.jpg" width="300" height="600"/>
 </p>
 
-### _Home screen displays all the available products._
+### *Home screen displays all the available products.*
 
-### _Customers can filter products on the basis of categories and can see specific product details._
+### *Customers can search products of different categories and can see specific product details.*
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -48,7 +48,7 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/product2.jpg" width="300" height="600" />
 </p>
 
-### _Vendors can upload new products under their respective categories._
+### *Vendors can upload new products of different categories.*
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -57,7 +57,7 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/createProduct.jpg" width="300" height="600"/>
 </p>
 
-### _Users can see details of all the registered vendors._
+### *Users can see details of all the registered vendors.*
 
 ### _Also, they can search some vendors on the basis of Location, Phone. No., Name etc._
 
@@ -68,7 +68,7 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorProducts.jpg" width="300" height="600"/>
 </p>
 
-### _General users and vendors have different profile screens. Users can update they personal details._
+### *General users and vendors have different profile screens. Users can update they personal details.*
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
