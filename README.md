@@ -103,3 +103,5 @@ There is another type of user, ADMIN.
 3. Review Section for products.
 
 4. Inbuilt text messaging features.
+
+5. 24X7 Customer Support.
