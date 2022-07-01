@@ -28,7 +28,7 @@ There is another type of user , ADMIN .
 
 ### Here is a sneek peek of the Application.
 
-#### *Login and Register Screen. User type (General User/Vendor),should be mentioned at the time of Registration.*
+### *Login and Register Screen. User type (General User/Vendor),should be mentioned at the time of Registration.*
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -37,7 +37,8 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/register.jpg" width="300" height="600"/>
 </p>
 
-### *Home screen displays all the available products. Customers can filter products on the basis of categories and can see specific product details.*
+### *Home screen displays all the available products.*
+### *Customers can filter products on the basis of categories and can see specific product details.*
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
@@ -54,7 +55,8 @@ There is another type of user , ADMIN .
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorProducts.jpg" width="300" height="600"/>
 </p>
 
-### *Users can see details of all the registered vendors and can search some vendors on the basis of Location, Phone. No., Name etc.* 
+### *Users can see details of all the registered vendors.* 
+### *Also, they can search some vendors on the basis of Location, Phone. No., Name etc.* 
 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
