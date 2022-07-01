@@ -30,13 +30,8 @@ There is another type of user , ADMIN . 
 
 ## Application Preview 
  
-<p float="left">
-   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
-  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard1.jpg" width="300" height="600" />
-  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
-  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard2.jpg"  width="300" height="600"/>
-</p>
-
+### Here is a sneek peek of the Application.
+ 
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
   <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard3.jpg" width="300" height="600" />
