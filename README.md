@@ -1,6 +1,6 @@
 # EasyBuy 
 
-EasyBuy is a mobile application which allow users to connect with different vendors and doorstep sellers . Here , multiple vendors can register their products for a negotiable price, customers can filter some vendors according to their locailty and compare mulitple prices for similar products and contact the vendor with the best selling price.
+EasyBuy is a mobile application which allow users to connect with different vendors and hawkers. Here , multiple vendors can register their products for a negotiable price, customers can filter some vendors according to their locailty and compare mulitple prices for similar products and contact the vendor with the best selling price.
 
 The application is based upon Client-Server architecture, where the server and the database are hosted separately and the client communicates via REST APIs.
 
