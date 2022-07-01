@@ -29,10 +29,6 @@ There is another type of user , ADMIN . 
 
 
 ## Application Preview 
-
-###  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  Here is a sneek peek of the application .
-
- &nbsp;
  
 <p float="left">
    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
