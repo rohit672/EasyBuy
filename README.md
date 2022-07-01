@@ -8,9 +8,9 @@ The application is based upon Client-Server architecture, where the server and t
 
 There are two types of Users.
 
-1. **General User / Customer** -> These users are the buyers. They can see all the vendors and their products belonging to different categories and can filter products using various parameters to get the best deal for them.
+- **General User / Customer** -> These users are the buyers. They can see all the vendors and their products belonging to different categories and can filter products using various parameters to get the best deal for them.
 
-2. **Vendors** -> These users are the sellers. They register their products, under the respective product category. They negotiate with the customer to get maximum profit .
+- **Vendors** -> These users are the sellers. They register their products, under the respective product category. They negotiate with the customer to get maximum profit .
 
 There is another type of user, ADMIN.
 
@@ -18,11 +18,11 @@ There is another type of user, ADMIN.
 
 ## App Features 
 
-1. It is a cross platform mobile application i.e. it can run on both, android and iOS systems .
+- It is a cross platform mobile application i.e. it can run on both, android and iOS systems .
 
-2. Smooth and Easy to use UI (user interface). Anyone can use the application.
+- Smooth and Easy to use UI (user interface). Anyone can use the application.
 
-3. Application is completely secure. 
+- Application is completely secure. 
 
 ## Application Preview 
 
@@ -81,27 +81,27 @@ There is another type of user, ADMIN.
 
 #### *Frontend*
 
-1. React Native
-2. JavaScript
+ - React Native
+ - JavaScript
 
 #### *Backend*
 
-1. Node.js
-2. Heroku
+ - Node.js
+ - Heroku
 
 #### *Databases*
 
-1.  MongoDB Altas
-2.  Cloudinary
+ - MongoDB Altas
+ - Cloudinary
 
 ## Upcoming Features 
 
-1. Live Location Tracking for vendors .
+- Live Location Tracking for vendors .
 
-2. Product updation by vendors.
+- Product updation by vendors.
 
-3. Review Section for products.
+- Review Section for products.
 
-4. Inbuilt text messaging features.
+- Inbuilt text messaging features.
 
-5. 24X7 Customer Support.
+- 24X7 Customer Support.
