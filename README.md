@@ -33,11 +33,11 @@ There is another type of user , ADMIN . 
 ### Here is a sneek peek of the application .
 
 <p float="left">
-  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard1.jpg" width="200" height="400" />
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard1.jpg" width="250" height="500" />
   &nbsp;
-  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard2.jpg" width="200" height="400"/>
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard2.jpg"  width="250" height="500"/>
   &nbsp;
-  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard3.jpg" width="200" height="400"/>
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard3.jpg"  width="250" height="500"/>
 </p>
 
 **Login and Registration screen . Type of user should be mentioned at the time of registration.**
