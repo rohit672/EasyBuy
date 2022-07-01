@@ -29,29 +29,77 @@ There is another type of user , ADMIN . 
 
 
 ## Application Preview 
+ 
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard1.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard2.jpg"  width="300" height="600"/>
+</p>
 
-### Here is a sneek peek of the application .
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/onBoard3.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/login.jpg" width="300" height="600"/>
+</p>
 
-### *Login and Registration screen . Type of user should be mentioned at the time of registration.*
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/register.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/selectUser.jpg" width="300" height="600"/>
+</p>
 
-![](https://github.com/rohit672/EasyBuy/blob/main/Preview/login2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/regis2.jpg)
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/home1.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/home2.jpg" width="300" height="600"/>
+</p>
 
-### *Home screen shows all the available products and their details . User can filter them category wise.* 
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/product2.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/moreProduct2.jpg" width="300" height="600"/>
+</p>
 
-![](https://github.com/rohit672/EasyBuy/blob/main/Preview/home2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/productdetail.jpg)
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/searchProduct1.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/seacrchProduct2.jpg" width="300" height="600"/>
+</p>
 
-### *Vendors can upload any product under its respective cateogry. * 
 
-![](https://github.com/rohit672/EasyBuy/blob/main/Preview/product2.jpg)    ![]()
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/searchVendor.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorProducts.jpg" width="300" height="600"/>
+</p>
 
-### *Users can see all the registered vendors and can also search some specific vendors on the basic of Location , Phone No. , Name etc.*
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/createProduct.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/uploadProduct.jpg" width="300" height="600"/>
+</p>
 
-![](https://github.com/rohit672/EasyBuy/blob/main/Preview/vendors2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/vendordetail2.jpg)
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/vendorprofile.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/yourProducts.jpg" width="300" height="600"/>
+</p>
 
-### *General users and vendors have different profile screens . Users can update their details like Profile Photo , Phone No. Location.*
-
-![](https://github.com/rohit672/EasyBuy/blob/main/Preview/userprofile2.jpg)    ![](https://github.com/rohit672/EasyBuy/blob/main/Preview/vendorprofile2.jpg)
-
+<p float="left">
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/editProducts.jpg" width="300" height="600" />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <img src="https://github.com/manojnsut/EasyBuy/blob/main/Preview/editProfile.jpg" width="300" height="600"/>
+</p>
 
 ## Technology  Stack 
 
