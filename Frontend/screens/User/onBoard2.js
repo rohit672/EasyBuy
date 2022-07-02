@@ -20,19 +20,19 @@ const slides = [
     id: '1',
     image: require('./images/img1.png'),
     title: 'Discover',
-    subtitle: 'Get Anything Anywhere !!',
+    subtitle: 'Get anything anywhere !!',
   },
   {
     id: '2',
     image: require('./images/img2.png'),
     title: 'Shop',
-    subtitle: 'Contact With Trusted Vendors ',
+    subtitle: 'Connect with trusted vendors ',
   },
   {
     id: '3',
     image: require('./images/img3.png'),
     title: 'Negotiate',
-    subtitle: 'Grab The Best Deals For You !!',
+    subtitle: 'Grab the best deals for you !!',
   },
 ];
 
