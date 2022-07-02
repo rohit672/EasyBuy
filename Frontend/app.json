@@ -28,6 +28,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "EasyBuy is app to make it easier for vendor roaming on streets and user to communicate."
+    "description": "EasyBuy is a mobile application which allow users to connect with different vendors and hawkers ."
   }
 }
